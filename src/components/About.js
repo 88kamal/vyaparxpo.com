@@ -1,7 +1,7 @@
 import React from 'react'
 
 function About() {
-    
+
     return (
         <div className=' '>
             <section className="bg-white container mx-auto md:py-10 mb-10">
@@ -18,7 +18,7 @@ function About() {
                         </div>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full">
                             {/* <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" /> */}
-                            <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://firebasestorage.googleapis.com/v0/b/videos-5c17d.appspot.com/o/My%20Video%203.mp4?alt=media&token=43cde305-bb2a-4bd9-aa45-582c7d67be3b" type="video/mp4" autoPlay  muted loop />
+                            <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://firebasestorage.googleapis.com/v0/b/videos-5c17d.appspot.com/o/My%20Video%203.mp4?alt=media&token=43cde305-bb2a-4bd9-aa45-582c7d67be3b" type="video/mp4" autoPlay muted loop />
                         </div>
                     </div>
                 </section>
