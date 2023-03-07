@@ -9,7 +9,7 @@ function Product() {
                     <div className=" md:flex md:gap-3 md:justify-between md:items-center">
                         <div className="left mb-5 md:m-0">
                             <div className="lg:max-w-[100%] lg:w-full md:w-1/2 w-full">
-                                <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://firebasestorage.googleapis.com/v0/b/videos-5c17d.appspot.com/o/agriculture%20profile%20video.mp4?alt=media&token=163ddf43-160f-48e4-9002-10ae2ca65322" type="video/mp4" autoPlay muted loop />
+                                <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://res.cloudinary.com/dzaujvmcy/video/upload/v1678174908/agriculture_profile_video_qluzsi.mp4" type="video/mp4" autoPlay muted loop />
                             </div>
                         </div>
                         <div className="mid mb-5 md:m-0">
@@ -18,7 +18,7 @@ function Product() {
                         </div>
                         <div className="right mb-5 md:m-0">
                             <div className="lg:max-w-[100%] lg:w-full md:w-1/2 w-full">
-                            <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://firebasestorage.googleapis.com/v0/b/videos-5c17d.appspot.com/o/agriculture%20profile%20video.mp4?alt=media&token=163ddf43-160f-48e4-9002-10ae2ca65322" type="video/mp4" autoPlay muted loop />
+                            <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://res.cloudinary.com/dzaujvmcy/video/upload/v1678174908/agriculture_profile_video_qluzsi.mp4" type="video/mp4" autoPlay muted loop />
                             </div>
                         </div>
                     </div>
