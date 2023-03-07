@@ -1,0 +1,25 @@
+
+.image2 {
+    display: none;
+  }
+  
+  .d-block {
+    display: block;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .image1 {
+      display: none;
+    }
+  
+    .image2 {
+      display: block;
+    }
+  
+    .mobilestyle {
+      background-color: #F1EEEE;
+    }
+  
+  
+  }
+  
