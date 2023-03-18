@@ -1,18 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import Footer from '../../components/Footer'
 import Layout from '../../components/Layout'
+import Map from '../../components/Map'
+import Navbar2 from '../../components/Navbar2'
 
 export default function WhydoExhibit() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
-        <Layout>
+        <div>
+            <Navbar2/>
             <div>
-                <img width={1500} src='https://rencotools.com/placeholder/600x300/D5D5D5/584959' />
+                <div className="">
+                <img className=' mt-20' width={1500} src='https://rencotools.com/placeholder/600x300/D5D5D5/584959' />
+                </div>
 
                 <div className=' container mx-auto p-5'>
-                    <h1 className=' text-center text-4xl mb-2'>Why to Exhibit Vyapar Expo?</h1>
-                    <h2 className=' text-center mb-5'> Platform in high-growth manufacturing market under one roof </h2>
-                    <p className=' mb-5'>The momentum of doing high-value business, swapping and networking face-to-face is greater then ever. Vyapar Xpo  unveiling the next of food manufacturing, agriculture manufacturing  digital adoption and breakthrough innovations in a critical year for the manufacturing chain</p>
+                    <h1 className=' text-center text-4xl mb-2 fonts2'>Why to Exhibit Vyapar Expo?</h1>
+                    <h2 className=' text-center mb-5 text-xl fonts2'> Platform in high-growth manufacturing market under one roof </h2>
+                    <p className=' mb-5 fonts4'>The momentum of doing high-value business, swapping and networking face-to-face is greater then ever. Vyapar Xpo  unveiling the next of food manufacturing, agriculture manufacturing  digital adoption and breakthrough innovations in a critical year for the manufacturing chain</p>
                     <div className=' text-center'>
-                        <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">BOOK YOUR STAND AS EXHIBITOR </button>
+                        <Link to={'/registrationfrom'}>
+                           <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">BOOK YOUR STAND AS EXHIBITOR </button>
+                        </Link>
+                     
                     </div>
 
                 </div>
@@ -100,6 +113,8 @@ export default function WhydoExhibit() {
                     </section>
                 </div>
             </div>
-        </Layout>
+            <Map/>
+            <Footer/>
+        </div>
     )
 }

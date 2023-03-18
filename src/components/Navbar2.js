@@ -7,37 +7,21 @@ import '../styleSheet/Navbar.css'
 
 
 
-function Navbar() {
+function Navbar2() {
     const [navbar, setNavbar] = useState(false);
 
-    const [navSize, setnavSize] = useState("10rem");
-    const [navColor, setnavColor] = useState("transparent");
-    const listenScrollEvent = () => {
-        window.scrollY > 10 ? setnavColor("black") : setnavColor("transparent");
-        window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
-    };
-    useEffect(() => {
-        window.addEventListener("scroll", listenScrollEvent);
-        return () => {
-            window.removeEventListener("scroll", listenScrollEvent);
-        };
-    }, []);
-
+   
 
     return (
         <div>
 
-            <nav className=" md:bg-transparent  fixed top-0 w-full z-30" style={{
-                backgroundColor: navColor,
-                //   height: navSize,
-                transition: "all 0.9s"
-            }} >
+            <nav className=" bg-black  fixed top-0 w-full z-30"  >
                 <div className=' overlayNav '>
                     <div className="justify-between px-4 mx-auto  lg:max-w-7xl md:items-center md:flex md:px-8   ">
                         <div>
                             <div className="flex items-center justify-between py-3 md:block">
                                 <div className=' flex'>
-                                    <img className=' rounded-xl w-20 md:w-32' src="image/logo4.png" alt="" />
+                                    <img className=' rounded-xl w-20 md:w-32 ' src="image/logo4.png" alt="" />
 
 <span className=' ml-2 border-r-2'></span>
                                     <p className='fonts2 text-sm ml-3 font-bold text-white'>10TH – 15TH JULY 2023
@@ -196,6 +180,6 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar2
 
 

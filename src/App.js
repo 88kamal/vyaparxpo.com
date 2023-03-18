@@ -7,6 +7,8 @@ import {
   Routes
 } from "react-router-dom";
 import WhydoExhibit from './pages/Exhibitor/WhydoExhibit';
+import RegistrationForm from './pages/RegistrationForm';
+import WhyVisit from './pages/Visitor/WhyVisit';
 function App() {
   return (
     <Router>
@@ -14,6 +16,9 @@ function App() {
         <Route exact path="/" element={<Home />} />
         {/* <Route exact path="/about" element={<About />} /> */}
         <Route exact path="/whytoExhibit" element={<WhydoExhibit />} />
+        <Route exact path="/registrationfrom" element={<RegistrationForm />} />
+        <Route exact path="/whyvisit" element={<WhyVisit />} />
+
       </Routes>
     </Router>
   );
