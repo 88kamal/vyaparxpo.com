@@ -22,9 +22,7 @@ export default function WhydoExhibit() {
                     <h2 className=' text-center mb-5 text-xl fonts2'> Platform in high-growth manufacturing market under one roof </h2>
                     <p className=' mb-5 fonts4'>The momentum of doing high-value business, swapping and networking face-to-face is greater then ever. Vyapar Xpo  unveiling the next of food manufacturing, agriculture manufacturing  digital adoption and breakthrough innovations in a critical year for the manufacturing chain</p>
                     <div className=' text-center'>
-                        <Link to={'/registrationfrom'}>
-                           <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">BOOK YOUR STAND AS EXHIBITOR </button>
-                        </Link>
+                    <Link to={'/registrationfrom'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">BOOK YOUR STAND</button></Link>
                      
                     </div>
 

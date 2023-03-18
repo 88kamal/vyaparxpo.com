@@ -2,7 +2,7 @@ import React from 'react'
 
 function Exhibitor() {
     return (
-        <div className='  py-5 md:py-10 mb-20'>
+        <div className='  py-5 md:py-0 mb-20'>
             <div className='container mx-auto '>
                 <h1 className=' text-center fonts2 font-bold text-2xl md:text-3xl'>OUR <span className=" text-[#FF0000]">EXHIBITOR</span></h1>
                 <section className="">

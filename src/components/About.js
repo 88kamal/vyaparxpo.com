@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function About() {
 
     return (
         <div className=' '>
             <section className="bg-white container mx-auto md:py-10 mb-10">
-                <h1 className=' text-center font-bold text-2xl md:text-3xl fonts2 mb-2'>WELCOME TO <span className=' text-rose-600 '>VARANASI</span></h1>
+                <h1 className=' text-center font-bold text-2xl md:text-3xl fonts2 mb-2'>WELCOME TO <span className=' text-[#ff0000] '>VARANASI</span></h1>
                 <h1 className='text-center px-4 md:px-0 font-bold text-lg md:text-xl fonts1 mb-7 md:mb-14'>1ST NATIONAL FOOD & AGRICULTURE VYAPAR EXPO 2023</h1>
                 <section className="text-gray-600 body-font">
                     <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
@@ -14,7 +15,7 @@ function About() {
                                 <br className="hidden lg:inline-block" />readymade gluten
                             </h1>
                             <p className="mb-8 leading-relaxed text-justify fonts4">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis libero, culpa consectetur harum explicabo ab voluptates optio blanditiis itaque, et amet, pariatur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, minu.</p>
-
+                            <Link to={'/registrationfrom'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">BOOK YOUR STAND</button></Link>
                         </div>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full">
                             {/* <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" /> */}

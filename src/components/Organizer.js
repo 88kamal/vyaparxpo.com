@@ -5,7 +5,7 @@ function Organizer() {
         <div>
             <section className="bg-white container px-4 mx-auto  md:mb-20">
                 <span className='text-indigo-600 font-semibold'>LITTLE ABOUT</span>
-                <h1 className=' container mx-auto  font-bold text-2xl md:text-3xl fonts2 mb-10'>ABOUT <span className=' text-rose-600   '>ORGANISER</span></h1>
+                <h1 className=' container mx-auto  font-bold text-2xl md:text-3xl fonts2 mb-10'>ABOUT <span className=' text-[#ff0000]   '>ORGANISER</span></h1>
                 <section className="text-gray-600 body-font">
                     <div className="  md:flex md:gap-2 md:justify-between md:items-center">
                         <div className="left mb-5 md:m-0">

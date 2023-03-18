@@ -14,7 +14,7 @@ function Icons() {
                         <div className="bg-[#d1e8ff] text-black flex p-2   justify-center rounded-xl ">
                             <div className=' text-center'>
                                 <div className=' flex justify-center'><FaUserFriends size={30} /></div>
-                                <CountUp className=' text-lg font-light' end={300} /><span className='text-lg  fonts1'>+</span> <br />
+                                <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={300} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
                                 <span className=' text-lg font-bold uppercase  fonts1'>Exhibitor</span>
                             </div>
 
@@ -25,7 +25,7 @@ function Icons() {
                         <div className="bg-[#d1e8ff] text-black   flex p-2  justify-center rounded-xl">
                             <div className=' text-center'>
                                 <div className=' flex justify-center'><FaUserCheck size={30} /></div>
-                                <CountUp className=' text-lg font-light' end={200} /><span className='text-lg fonts1'>+</span> <br />
+                                <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={200} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
                                 <span className=' text-lg font-bold uppercase fonts1'>Brand</span>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ function Icons() {
                         <div className="bg-[#d1e8ff] text-black  flex p-2  justify-center rounded-xl">
                             <div className=' text-center'>
                                 <div className=' flex justify-center'><TbBrandVimeo size={30} /></div>
-                                <CountUp className=' text-lg font-light' end={2500} /><span className='text-lg fonts1'>+</span> <br />
+                                <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={2500} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
                                 <span className=' text-lg font-bold fonts1'>Visitor</span>
                             </div>
                         </div>
@@ -43,7 +43,7 @@ function Icons() {
                         <div className="bg-[#d1e8ff] text-black  flex p-2  justify-center rounded-xl">
                             <div className=' text-center'>
                                 <div className=' flex justify-center'><TbBrandVimeo size={30} /></div>
-                                <CountUp className=' text-lg font-light' end={1000} /><span className='text-lg fonts1'>+</span> <br />
+                                <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={1000} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
                                 <span className=' text-lg font-bold uppercase fonts1'>Frames</span>
                             </div>
                         </div>

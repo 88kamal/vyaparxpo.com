@@ -31,7 +31,7 @@ function Home() {
             <Organizer/>
             <WhyVaranasi/>
             <Highlights/>
-            <Statistics/>
+            {/* <Statistics/> */}
             <Exhibitor/>
             <ScrollBtn/>
             <Map/>

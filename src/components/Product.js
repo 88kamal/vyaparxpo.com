@@ -4,7 +4,7 @@ function Product() {
     return (
         <div>
             <section className="bg-white container px-4 mx-auto mb-10 md:mb-20">
-                <h1 className=' container mx-auto  font-bold text-2xl md:text-3xl fonts2 mb-5'>VYAPAR... <span className=' text-rose-600  '>INDIA 2023</span></h1>
+                <h1 className=' container mx-auto  font-bold text-2xl md:text-3xl fonts2 mb-5'>VYAPAR... <span className=' text-[#ff0000]  '>INDIA 2023</span></h1>
                 <section className="text-gray-600 body-font">
                     <div className=" md:flex md:gap-3 md:justify-between md:items-center">
                         <div className="left mb-5 md:m-0">
