@@ -44,7 +44,7 @@ function Navbar() {
                                         <br />
                                         IIT – BHU CAMPUS
                                         <br />
-                                        VARABASI, UTTAR PRADESH</p>
+                                        VARANASI, UTTAR PRADESH</p>
                                 </div>
 
 
@@ -107,19 +107,28 @@ function Navbar() {
                                             {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg> */}
                                         </button>
                                         <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
-                                            <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Covid-19 Information</a></li>
+                                            <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">About Vyapar Expo 2023</a></li>
                                             <hr />
-                                            <li className><a className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">About Vyapar Xpo</a></li>
+                                            <li className><Link to={'/aboutorganizer'} className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap ">About Oraganiser</Link></li>
                                             <hr />
-                                            <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Our staff</a></li>
-                                            <hr />
-                                            <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Food & Agro Vyapar Expo</a></li>
+                                            <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Vyapar Team</a></li>
+                                            {/* <hr />
+                                            <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Food & Agro Vyapar Expo</a></li> */}
 
 
                                         </ul>
                                     </div>
 
 
+                                    </li>
+                                    <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase   md:rounded-full">
+                                        <Link className=' flex' to={'/stallinformation'} > STALL INFO</Link>
+                                    </li>
+                                    <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase   md:rounded-full">
+                                        <a className=' flex' href='/' > VISITOR PASS</a>
+                                    </li>
+                                    <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase   md:rounded-full">
+                                        <a className=' flex' href='/' > BHU STUDENT REGISTRATION</a>
                                     </li>
                                     <li className="text-gray-600 font-semibold text-sm   ">
 
@@ -129,15 +138,16 @@ function Navbar() {
                                                 {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg> */}
                                             </button>
                                             <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
-                                                <li className><Link to={'/whytoExhibit'} className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Why To Exhibit</Link></li>
+                                                <li className><Link to={'/whytoExhibit'} className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">Why To Exhibit</Link></li>
                                                 <hr />
-                                                <li className><a className="bg-[#ff0000] text-sm font-medium  hover:textyellow-300  hover:border-b border-yellow-300 text-white py-2 px-4 block whitespace-no-wrap" href="#">Profile Exibitor</a></li>
+                                                <li className><Link to={'/exhibitorprofile'} className="bg-[#ff0000] text-sm font-medium  hover:textyellow-300  hover:border-b border-yellow-300 text-white py-2 px-4 block whitespace-no-wrap" href="#">EXHIBITOR PROFILE</Link></li>
                                                 <hr />
-                                                <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Contract Form</a></li>
+                                                <li className><Link to={'/registrationfrom'} className=" bg-[#ff0000] text-sm font-medium  hover:text-red-yellow 3ov text-white er:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" >Registration Exibitor</Link></li>
                                                 <hr />
-                                                <li className><Link to={'/registrationfrom'} className=" bg-[#ff0000] text-sm font-medium  hover:text-red-yellow 3ov text-white er:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" >Registration Exibitor</Link></li>
+                                                <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">ABOUT STALL</a></li>
+                                           
                                                 <hr />
-                                                <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Hotel Transportation</a></li>
+                                                <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">HOTEL & TRAVEL</a></li>
                                                 <hr />
                                                 {/* <li className><a className=" bg-white text-sm font-medium  hover:text-red-600 hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#"></a></li>
                                                 <hr />
@@ -153,12 +163,13 @@ function Navbar() {
                                                 {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg> */}
                                             </button>
                                             <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
-                                                <li className><Link className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" to={'/whyvisit'}>Why Visit</Link></li>
+                                                <li className><Link className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" to={'/whyvisit'}>WHY VISIT?</Link></li>
                                                 <hr />
-                                                <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Visitor Profile</a></li>
+                                                <li className><Link to={'/profilevisitor'} className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Profile</Link></li>
                                                 <hr />
-                                                <li className><a className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap" href="#">Visitor Registration</a></li>
-
+                                                <li className><Link to={'/registrationfrom'} className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Registration</Link></li>
+                                                <hr />
+                                                <li className><Link className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap" href="#">HOTEL AND TRAVEL</Link></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -178,7 +189,7 @@ function Navbar() {
                                             </ul>
                                         </div>
                                     </li> */}
-                                    <Link to={'/registrationfrom'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">BOOK YOUR STAND</button></Link>
+                                    {/* <Link to={'/registrationfrom'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">BOOK YOUR STAND</button></Link> */}
                                     {/* <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase">
                                         <Link to={'/registrationfrom'} className='md:hover:border-b-2 py-[1px] border-[yellow] '>GET YOUR PASS</Link>
                                     </li> */}

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Layout from '../components/Layout'
 import Map from '../components/Map'
 import Navbar2 from '../components/Navbar2'
+import ScrollBtn from '../ScrollBtn/ScrollBtn'
 
 function RegistrationForm() {
   useEffect(() => {
@@ -87,6 +88,7 @@ function RegistrationForm() {
           </form>
         </div>
       </div>
+      <ScrollBtn/>
       <Map />
     </Layout>
   )

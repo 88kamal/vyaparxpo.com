@@ -4,7 +4,7 @@ import Map from '../../components/Map'
 import Navbar2 from '../../components/Navbar2'
 import ScrollBtn from '../../ScrollBtn/ScrollBtn'
 
-export default function ProfileExhibitor() {
+export default function ProfileVisitor() {
   useEffect(() => {
     window.scrollTo(0, 0)
 }, [])

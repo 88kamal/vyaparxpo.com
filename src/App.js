@@ -9,6 +9,10 @@ import {
 import WhydoExhibit from './pages/Exhibitor/WhydoExhibit';
 import RegistrationForm from './pages/RegistrationForm';
 import WhyVisit from './pages/Visitor/WhyVisit';
+import ProfileExhibitor from './pages/Exhibitor/ProfileExhibitor';
+import AboutOrganizer from './pages/About/AboutOrganizer';
+import Stallinformation from './pages/Stallinformation';
+import ProfileVisitor from './pages/Visitor/ProfileVisitor';
 function App() {
   return (
     <Router>
@@ -18,6 +22,10 @@ function App() {
         <Route exact path="/whytoExhibit" element={<WhydoExhibit />} />
         <Route exact path="/registrationfrom" element={<RegistrationForm />} />
         <Route exact path="/whyvisit" element={<WhyVisit />} />
+        <Route exact path="/exhibitorprofile" element={<ProfileExhibitor />} />
+        <Route exact path="/aboutorganizer" element={<AboutOrganizer />} />
+        <Route exact path="/stallinformation" element={<Stallinformation />} />
+        <Route exact path="/profilevisitor" element={<ProfileVisitor />} />
 
       </Routes>
     </Router>

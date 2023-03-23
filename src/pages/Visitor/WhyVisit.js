@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../../components/Footer'
 import Map from '../../components/Map'
 import Navbar2 from '../../components/Navbar2'
+import ScrollBtn from '../../ScrollBtn/ScrollBtn'
 
 function WhyVisit() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
   return (
     <div>
       <Navbar2 />
@@ -69,7 +73,7 @@ function WhyVisit() {
             </ul>
           </div>
         </div>
-
+        <ScrollBtn/>
       </div>
       <div className="img mb-10">
         <img className=' mt-10' src="image/reg.jpg" alt="" />
