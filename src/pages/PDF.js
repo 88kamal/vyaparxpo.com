@@ -26,7 +26,7 @@ const PDF = ({ all, fname, email, designation, mobile, companyName, companyWebsi
 
 
             </div>
-            <button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">
+            <button type="button" class="text-white bg-[#1900ff] hover:bg-purple-800font-medium rounded-full text-sm px-8 py-2 text-center mr-2 fonts2 ">
                 <Pdf targetRef={ref} filename="registration.pdf">
                     {({ toPdf }) => <button onClick={toPdf}>
                         <div className="flex items-center gap-2">
