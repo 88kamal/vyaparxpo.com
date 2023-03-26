@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 import Map from '../components/Map'
 import Navbar2 from '../components/Navbar2'
 import ScrollBtn from '../ScrollBtn/ScrollBtn'
@@ -9,11 +10,8 @@ function Stallinformation() {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <div>
-            <Navbar2 />
-            {/* <div className="img">
-    <img className='mt-20 mb-6' src="image/reg2.jpg" alt="" />
-  </div> */}
+        <Layout>
+           
             <div className="main container mx-auto px-4 mt-28">
                 <h1 className=' text-3xl font-bold text-center fonts2 mb-2'>VYAPR <span className=' text-[#ff0000]'>EXPO 2023
                     STAND INFORMATION GUIDE </span>
@@ -57,7 +55,7 @@ function Stallinformation() {
            <ScrollBtn/>
             <Map />
             <Footer />
-        </div>
+        </Layout>
     )
 }
 

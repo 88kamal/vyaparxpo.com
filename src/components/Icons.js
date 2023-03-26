@@ -26,7 +26,7 @@ function Icons() {
                             <div className=' text-center'>
                                 <div className=' flex justify-center'><FaUserCheck size={30} /></div>
                                 <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={200} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
-                                <span className=' text-lg font-bold uppercase fonts1'>Brand</span>
+                                <span className=' text-lg font-bold uppercase fonts1'>Brands</span>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ function Icons() {
                             <div className=' text-center'>
                                 <div className=' flex justify-center'><TbBrandVimeo size={30} /></div>
                                 <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={2500} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
-                                <span className=' text-lg font-bold fonts1'>Visitor</span>
+                                <span className=' text-lg font-bold fonts1 uppercase'>Visitor</span>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ function Icons() {
                             <div className=' text-center'>
                                 <div className=' flex justify-center'><TbBrandVimeo size={30} /></div>
                                 <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={1000} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
-                                <span className=' text-lg font-bold uppercase fonts1'>Frames</span>
+                                <span className=' text-lg font-bold uppercase fonts1'>Farmers</span>
                             </div>
                         </div>
                     </div>

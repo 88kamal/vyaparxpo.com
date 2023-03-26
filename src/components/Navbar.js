@@ -32,19 +32,16 @@ function Navbar() {
                 //   height: navSize,
                 transition: "all 0.9s"
             }} >
-                <div className=' overlayNav '>
-                    <div className="justify-between px-4 mx-auto  lg:max-w-7xl md:items-center md:flex md:px-8   ">
+                <div className=' overlayNav bg-white shadow-lg '>
+                    <div className="justify-between px-2  md:items-center md:flex    ">
                         <div>
                             <div className="flex items-center justify-between py-3 md:block">
                                 <div className=' flex'>
-                                    <img className=' rounded-xl w-20 md:w-32' src="image/logo4.png" alt="" />
+                                    <img className=' rounded-xl w-20 md:w-[4em] h-[4em]' src="image/logot.png" alt="" />
 
                                     <span className=' ml-2 border-r-2'></span>
-                                    <p className='fonts2 text-sm ml-3 font-bold text-white'>10TH – 15TH JULY 2023
-                                        <br />
-                                        IIT – BHU CAMPUS
-                                        <br />
-                                        VARANASI, UTTAR PRADESH</p>
+                                    <p className='fonts2 text-xs ml-3 mt-2 font-bold text-black uppercase'>
+                                    16-17-18-19-20 OCTOBER, 2023 <br /> AGRICULTURE GROUND (BHU CAMPUS), <br /> VARANASI Uttarpardesh</p>
                                 </div>
 
 
@@ -58,7 +55,7 @@ function Navbar() {
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="w-8 h-8"
                                                 viewBox="0 0 20 20"
-                                                fill="white"
+                                                fill="black"
 
                                             >
                                                 <path
@@ -75,7 +72,7 @@ function Navbar() {
                                                 className="w-8 h-8"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
-                                                stroke="white"
+                                                stroke="black"
                                                 strokeWidth={2}
                                             >
                                                 <path
@@ -97,14 +94,14 @@ function Navbar() {
                                 className={`flex-1 justify-self-center pb-3 mt-1 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                                     }`}
                             >
-                                <ul className="items-center bg-black md:bg-transparent justify-center space-y-4 md:flex md:space-x-6 md:space-y-0 p-5 md:p-0">
-                                    <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase md:border border-white md:px-5 md:rounded-full hover:border-[yellow]">
+                                <ul className="items-center bg-black md:bg-transparent justify-center space-y-4 md:flex md:space-x-3 md:space-y-0 p-5 md:p-0">
+                                    <li className="text-white md:text-gray-900 font-semibold text-sm hover:text-[#ff0000] uppercase md:border border-black md:px-5 md:rounded-full hover:border-[#ff0000]">
                                         <a className=' flex' href='/' > Home</a>
                                     </li>
-                                    <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase "><div className="dropdown inline-block  ">
-                                        <button className=" text-gray-100 hover:text-[yellow] font-semibold md:py-2  rounded inline-flex items-center">
-                                            <span className="mr-1 md:hover:border-b-2 py-[1px] border-[yellow] ">ABOUT</span>
-                                            {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg> */}
+                                    <li className="text-white md:text-gray-900 font-semibold text-sm hover:text-[#ff0000] uppercase "><div className="dropdown inline-block  ">
+                                        <button className=" text-white md:text-gray-900 hover:text-[#ff0000] font-semibold md:py-2  rounded inline-flex items-center">
+                                            <span className="mr-1 md:hover:border-b-2 py-[1px] border-[#ff0000] ">ABOUT</span>
+                                         
                                         </button>
                                         <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
                                             <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">About Vyapar Expo 2023</a></li>
@@ -121,20 +118,13 @@ function Navbar() {
 
 
                                     </li>
-                                    <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase   md:rounded-full">
-                                        <Link className=' flex' to={'/stallinformation'} > STALL INFO</Link>
-                                    </li>
-                                    <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase   md:rounded-full">
-                                        <a className=' flex' href='/' > VISITOR PASS</a>
-                                    </li>
-                                    <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase   md:rounded-full">
-                                        <a className=' flex' href='/' > BHU STUDENT REGISTRATION</a>
-                                    </li>
-                                    <li className="text-gray-600 font-semibold text-sm   ">
+                                    <li className="text-white md:text-gray-900 font-semibold text-sm hover:text-[#ff0000] uppercase   md:rounded-full">
+                                        <Link className=' flex' to={'/stallinformation'} > STALL INFORMATION</Link>
+                                    </li> <li className="text-gray-600 font-semibold text-sm   ">
 
                                         <div className="dropdown inline-block  ">
-                                            <button className=" text-gray-100 hover:text-[yellow] font-semibold md:py-2  rounded inline-flex items-center">
-                                                <span className="mr-1 md:hover:border-b-2 py-[1px] border-[yellow] ">EXHIBITOR</span>
+                                            <button className=" text-white md:text-gray-900 hover:text-[#ff0000] font-semibold md:py-2  rounded inline-flex items-center">
+                                                <span className="mr-1 md:hover:border-b-2 py-[1px] border-[#ff0000] ">EXHIBITOR</span>
                                                 {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg> */}
                                             </button>
                                             <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
@@ -142,7 +132,7 @@ function Navbar() {
                                                 <hr />
                                                 <li className><Link to={'/exhibitorprofile'} className="bg-[#ff0000] text-sm font-medium  hover:textyellow-300  hover:border-b border-yellow-300 text-white py-2 px-4 block whitespace-no-wrap" href="#">EXHIBITOR PROFILE</Link></li>
                                                 <hr />
-                                                <li className><Link to={'/registrationfrom'} className=" bg-[#ff0000] text-sm font-medium  hover:text-red-yellow 3ov text-white er:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" >Registration Exibitor</Link></li>
+                                                <li className><Link to={'/exhibitorregistration'} className=" bg-[#ff0000] text-sm font-medium  hover:text-red-yellow 3ov text-white er:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" >Registration Exibitor</Link></li>
                                                 <hr />
                                                 <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">ABOUT STALL</a></li>
                                            
@@ -155,31 +145,38 @@ function Navbar() {
                                             </ul>
                                         </div>
                                     </li>
-                                    <li className="text-gray-100 font-semibold text-sm  ">
+                                    <li className="text-white md:text-gray-900 font-semibold text-sm  ">
 
                                         <div className="dropdown inline-block  ">
-                                            <button className=" text-gray-100 hover:text-[yellow] font-semibold md:py-2  rounded inline-flex items-center">
-                                                <span className="mr-1 md:hover:border-b-2 py-[1px] border-[yellow] ">VISITOR</span>
-                                                {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg> */}
+                                            <button className=" text-white md:text-gray-900 hover:text-[#ff0000] font-semibold md:py-2  rounded inline-flex items-center">
+                                                <span className="mr-1 md:hover:border-b-2 py-[1px] border-[#ff0000] ">VISITOR</span>
+                                               
                                             </button>
                                             <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
                                                 <li className><Link className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" to={'/whyvisit'}>WHY VISIT?</Link></li>
                                                 <hr />
                                                 <li className><Link to={'/profilevisitor'} className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Profile</Link></li>
                                                 <hr />
-                                                <li className><Link to={'/registrationfrom'} className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Registration</Link></li>
+                                                <li className><Link to={'/visitorregistration'} className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Registration</Link></li>
                                                 <hr />
                                                 <li className><Link className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap" href="#">HOTEL AND TRAVEL</Link></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    {/* <li className="text-gray-600 font-semibold text-sm hover:text-[yellow] uppercase">
+                                    <li className="text-white md:text-gray-900 font-semibold text-sm hover:text-[#ff0000] uppercase   md:rounded-full">
+                                        <Link className=' flex' to={'/visitor'} > VISITOR PASS</Link>
+                                    </li>
+                                    <li className="text-white md:text-gray-900 font-semibold text-sm hover:text-[#ff0000] uppercase   md:rounded-full">
+                                        <Link className=' flex' to={'/bhustudentregistration'} > BHU STUDENT REGISTRATION</Link>
+                                    </li>
+                                   
+                                    {/* <li className="text-gray-600 font-semibold text-sm hover:text-[#ff0000] uppercase">
                                         <div className="dropdown inline-block  ">
-                                            <button className=" text-gray-100 hover:text-[yellow] font-semibold md:py-2  rounded inline-flex items-center">
-                                                <span className="mr-1 md:hover:border-b-2 py-[1px] border-[yellow] ">GLIMPSES</span>
+                                            <button className=" text-white md:text-gray-900 hover:text-[#ff0000] font-semibold md:py-2  rounded inline-flex items-center">
+                                                <span className="mr-1 md:hover:border-b-2 py-[1px] border-[#ff0000] ">GLIMPSES</span>
                                                 
                                             </button>
-                                            <ul className="dropdown-menu absolute hidden text-gray-100 md:pt-5 border-b-2 border-red-600 ">
+                                            <ul className="dropdown-menu absolute hidden text-white md:text-gray-900 md:pt-5 border-b-2 border-red-600 ">
                                                 <li className><a className=" bg-white text-sm font-medium  hover:text-red-600 hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Media Coverage</a></li>
                                                 <hr />
                                                 <li className><a className="bg-white text-sm font-medium  hover:text-red-600 hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Gallery</a></li>
@@ -190,8 +187,8 @@ function Navbar() {
                                         </div>
                                     </li> */}
                                     {/* <Link to={'/registrationfrom'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">BOOK YOUR STAND</button></Link> */}
-                                    {/* <li className="text-gray-100 font-semibold text-sm hover:text-[yellow] uppercase">
-                                        <Link to={'/registrationfrom'} className='md:hover:border-b-2 py-[1px] border-[yellow] '>GET YOUR PASS</Link>
+                                    {/* <li className="text-white md:text-gray-900 font-semibold text-sm hover:text-[#ff0000] uppercase">
+                                        <Link to={'/registrationfrom'} className='md:hover:border-b-2 py-[1px] border-[#ff0000] '>GET YOUR PASS</Link>
                                     </li> */}
 
                                 </ul>

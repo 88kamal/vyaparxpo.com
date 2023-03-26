@@ -11,7 +11,7 @@ function Hero() {
                 {/* <video className="min-w-full min-h-full absolute object-cover" src="https://firebasestorage.googleapis.com/v0/b/videos-5c17d.appspot.com/o/My%20Video%203.mp4?alt=media&token=43cde305-bb2a-4bd9-aa45-582c7d67be3b" type="video/mp4" autoPlay  muted loop /> */}
             </div>
 
-            <div className="video-content space-y-2 mt-24 md:mt-40 md:ml-[108px]  ">
+            <div className="video-content space-y-2 mt-24 md:mt-40 md:ml-[40px]  ">
                 <div className="bg-white w-[231px] md:w-[433px] ">
                     <h1 className="md:text-6xl text-[32px] font-bold  fonts2  bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}>1ST NATIONAL</h1>
                 </div>
@@ -50,7 +50,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className=' py-3 '>
-                    <Link to={'/registrationfrom'}>
+                    <Link to={'/visitorregistration'}>
                         <button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 fonts2 ">VISITOR REGISTRATION</button>
                     </Link>
 

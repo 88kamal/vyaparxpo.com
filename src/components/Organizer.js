@@ -36,8 +36,9 @@ function Organizer() {
                                     </div>
                                 </div>
                                 <div className="sm:w-1/2 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                                    <p className="leading-relaxed text-lg mb-4">Food & Agriculture Vyapar  Expo 2023  aims to gather India  leading manufacturer , brand  players and stakeholders from the India  agri-food industry to share best practices, showcase the latest technologies, to tap business opportunities, and to collaborate towards greater security and sustainability in  India
+                                <p className=" text-lg mb-4 text-justify bg-slate-50 p-3 rounded-xl border italic">Food & Agriculture Vyapar  Expo 2023  aims to gather India  leading manufacturer , brand  players and stakeholders from the India  agri-food industry to share best practices, showcase the latest technologies, to tap business opportunities, and to collaborate towards greater security and sustainability in  India
                                     </p>
+
 
                                 </div>
                             </div>

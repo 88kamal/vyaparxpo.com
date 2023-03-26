@@ -15,6 +15,7 @@ import Organizer from '../components/Organizer'
 import Product from '../components/Product'
 import RegBox from '../components/RegBox'
 import Statistics from '../components/Statistics'
+import Team from '../components/Team'
 import Try from '../components/Try'
 import WhyVaranasi from '../components/WhyVaranasi'
 import ScrollBtn from '../ScrollBtn/ScrollBtn'
@@ -30,9 +31,10 @@ function Home() {
             <Product/>
             <Organizer/>
             <WhyVaranasi/>
-            <Highlights/>
+            {/* <Highlights/> */}
             {/* <Statistics/> */}
             <Exhibitor/>
+            <Team/>
             <ScrollBtn/>
             <Map/>
 {/* <Footer/> */}
