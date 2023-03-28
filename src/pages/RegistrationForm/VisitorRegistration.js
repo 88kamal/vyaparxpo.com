@@ -61,7 +61,7 @@ function VisitorRegistration() {
                 selectedAbout: selectedAbout,
                 createdAt: new Date().toLocaleString(),
             })
-             toast.success('Visitor Registration Success', {
+            toast.success('Visitor Registration Success', {
                 position: "top-center",
                 autoClose: 1000,
                 hideProgressBar: false,
@@ -74,6 +74,7 @@ function VisitorRegistration() {
         } catch (error) {
             console.log(error)
         }
+        // after filling all the fields then fill empty
         setName('');
         setCompanyName('');
         setEmail('');
@@ -105,7 +106,7 @@ function VisitorRegistration() {
                                     16-17-18-19-20 OCTOBER 2023 </h1>
                             </div>
                             <h1 className=' text-center text-2xl underline fonts1 font-bold'>
-                                    Visitors Registration</h1>
+                                Visitors Registration</h1>
                         </div>
                         <div className="right">
                             <div className="inner">

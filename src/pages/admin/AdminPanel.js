@@ -4,9 +4,10 @@ import AllUserDetailIcons from './components/AllUserDetailIcons'
 import { db } from '../../firebase/FireBaseConfig'
 import { collection, query, limit, orderBy, onSnapshot } from "firebase/firestore";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import AllStallDetails from './components/AllStallDetails';
 // import "react-tabs/style/react-tabs.css";
 
-function AdminPanel({ logout }) {
+function AdminPanel({ logout, sixSqMeter,nineSqMeter,twelveSqMeter,fifteenSqMeter }) {
   const [exhibitor, setexhibitor] = useState([]);
   useEffect(() => {
     const q = query(
@@ -47,24 +48,45 @@ function AdminPanel({ logout }) {
   }, []);
 
 
+  // const [sixSqMeter, setSixSquMeter] = useState([]);
+  // useEffect(() => {
+  //   const q = query(
+  //     collection(db, "sixSquareMeterPayment"),
+  //     orderBy("createdAt"),
+  //     // limit(50)
+  //   );
+  //   const data = onSnapshot(q, (QuerySnapshot) => {
+  //     let sixSqMeter = [];
+  //     QuerySnapshot.forEach((doc) => {
+  //       sixSqMeter.push({ ...doc.data(), id: doc.id });
+  //     });
+  //     setSixSquMeter(sixSqMeter)
+
+  //   });
+  //   console.log(sixSqMeter)
+
+  //   return () => data;
+  // }, []);
+
   return (
-    <div className=' h-[100%] md:h-screen' style={{ backgroundColor: 'rgb(32, 33, 36)' }}>
+    <div className=' h-[100%] md:h-[80em]' style={{ backgroundColor: 'rgb(32, 33, 36)' }}>
       <AdminNav logout={logout} />
       <AllUserDetailIcons exhibitor={exhibitor} visitor={visitor} />
+      <AllStallDetails sixSqMeter={sixSqMeter}  nineSqMeter={nineSqMeter} twelveSqMeter={twelveSqMeter} fifteenSqMeter={fifteenSqMeter}  />
       <div className="tab container mx-auto ">
         <Tabs defaultIndex={0} className=" " >
           <TabList className="md:flex md:space-x-8 bg-  grid grid-cols-2 text-center gap-4   md:justify-center mb-10 ">
             <Tab>
-              <button type="button" className="font-medium border-b-2 shadow-2xl hover:shadow-purple-700 border-purple-500 text-purple-500 rounded-xl text-xl   px-5 py-1.5 text-center ">Exhibitor</button>
+              <button type="button" className="font-medium border-b-2 shadow-2xl hover:shadow-purple-700 border-purple-500 text-purple-500 rounded-xl text-xl   px-5 py-1.5 text-center bg-[#ffffff12] ">Exhibitor</button>
             </Tab>
             <Tab>
-              <button type="button" className="font-medium border-b-2 border-pink-500 text-pink-500 shadow-2xl hover:shadow-pink-700  rounded-xl text-xl    px-5 py-1.5 text-center ">Visitor</button>
+              <button type="button" className="font-medium border-b-2 border-pink-500 bg-[#ffffff12] text-pink-500 shadow-2xl hover:shadow-pink-700  rounded-xl text-xl    px-5 py-1.5 text-center ">Visitor</button>
             </Tab>
             <Tab>
-              <button type="button" className="font-medium border-b-2 border-green-500 text-green-500 rounded-xl text-xl shadow-2xl hover:shadow-green-700   px-5 py-1.5 text-center ">BHU Student</button>
+              <button type="button" className="font-medium border-b-2 border-green-500 bg-[#ffffff12] text-green-500 rounded-xl text-xl shadow-2xl hover:shadow-green-700   px-5 py-1.5 text-center ">BHU Student</button>
             </Tab>
             <Tab>
-              <button type="button" className="font-medium border-b-2 border-orange-500 text-orange-500 rounded-xl text-xl shadow-2xl hover:shadow-orange-700   px-5 py-1.5 text-center ">Sponsorship</button>
+              <button type="button" className="font-medium border-b-2 border-orange-500 bg-[#ffffff12] text-orange-500 rounded-xl text-xl shadow-2xl hover:shadow-orange-700   px-5 py-1.5 text-center ">Sponsorship</button>
             </Tab>
           </TabList>
           <TabPanel>
@@ -109,7 +131,7 @@ function Exhibitor() {
       setexhibitor(exhibitor)
 
     });
-    console.log(exhibitor.length)
+    console.log(exhibitor)
 
     return () => data;
   }, []);
@@ -302,7 +324,7 @@ function Visitor() {
                         State
                       </th>
                       <th scope="col" className="border-r px-6 py-4 border-gray-500">
-                      Selected Category
+                        Selected Category
                       </th>
                       <th scope="col" className="border-r px-6 py-4 border-gray-500">
                         City
@@ -350,7 +372,7 @@ function Visitor() {
                           <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
                             {selectedCategory}
                           </td>
-                           <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
+                          <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
                             {city}
                           </td>
                           <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">

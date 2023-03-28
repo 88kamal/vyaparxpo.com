@@ -40,7 +40,7 @@ function AboutOrganizer() {
                                             VYAPAR INDIA</h2>
                                         <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4" />
                                         <Link to={'/adminlogin'}>
-                                         <button type="button" className="text-white bg-violet-600 hover:bg-purple-800  font-medium rounded-full text-sm px-10 py-2 ">Admin</button>
+                                         <button type="button" className="text-white bg-green-600 hover:bg-purple-800  font-medium rounded-full text-sm px-10 py-2 ">Admin</button>
                                         </Link>
                                        
 

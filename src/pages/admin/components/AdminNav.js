@@ -3,7 +3,7 @@ import React from 'react'
 function AdminNav({logout}) {
   return (
     <div>
-      <nav className=" px-5  sm:px-4 py-5 shadow-2xl " style={{backgroundColor: 'rgb(40, 44, 52)'}}>
+      <nav className=" px-5   sm:px-4 py-3 shadow-3xl " style={{backgroundColor: 'rgb(40, 44, 52)'}}>
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a className="">
             {/* <img src="image/logot.png" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> */}

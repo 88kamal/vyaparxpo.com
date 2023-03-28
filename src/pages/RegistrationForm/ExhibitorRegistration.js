@@ -4,6 +4,7 @@ import { db } from '../../firebase/FireBaseConfig'
 import { collection, addDoc } from 'firebase/firestore'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {  useNavigate } from 'react-router';
 function ExhibitorRegistration() {
     const [exhibitingCompanysName, setExhibitingCompanysName] = useState('');
     const [gstno, setGstno] = useState('');
@@ -20,7 +21,7 @@ function ExhibitorRegistration() {
     const [selectedStallSpace, setSelectedStallSpace] = useState([]);
 
     const [message, setMessage] = useState('');
-
+const navigate = useNavigate()
 
     function handleSelectChange(event) {
         setSelectedCountry(event.target.value);
@@ -31,7 +32,7 @@ function ExhibitorRegistration() {
 
 
     const Register = async (e) => {
-        // validation
+        // // validation
         if (exhibitingCompanysName === '' || gstno === '' || mobile === '' || city === '' || email === '' || country === '' || pin === '' || panNumber === '' || stall === '') {
             return toast.error('Please Fill All Fields', {
                 position: "top-center",
@@ -94,6 +95,9 @@ function ExhibitorRegistration() {
         setSelectedCountry('');
         setSelectedStallSpace('');
         setMessage('')
+       setTimeout(() => {
+        navigate('/allstall')
+       }, 1500);
 
     }
 
@@ -177,7 +181,7 @@ function ExhibitorRegistration() {
                                                     <option className="" selected>Select</option>
                                                     <option value="BUILDUP STALL SPACE">BUILDUP STALL SPACE</option>
                                                     <option value="RAW SPACE">RAW SPACE</option>
-                                                    
+
                                                 </select>
                                             </div>
                                             <div>

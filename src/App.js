@@ -25,6 +25,18 @@ import AdminPanel from './pages/admin/AdminPanel';
 import Protected from './middleware/Protected';
 import { useEffect, useState } from 'react';
 import About from './components/About';
+import AllStall from './pages/stall/AllStall';
+import SixSq from './pages/stall/sixSq/SixSq';
+import Invoice from './pages/stall/sixSq/Invoice';
+import InvoiceNine from './pages/stall/nineSq/InvoiceNine';
+import InvoiceTwelve from './pages/stall/TwelveSq/InvoiceTwelve';
+import InvoiceFifteen from './pages/stall/FifteenSq/InvoiceFifteen';
+import SixSqMeter from './pages/admin/adminStallDetail/SixSqMeter';
+import {db} from './firebase/FireBaseConfig'
+import { collection, query, limit, orderBy, onSnapshot } from "firebase/firestore";
+import NineSqMeter from './pages/admin/adminStallDetail/NineSqMeter';
+import TwelveSqMeter from './pages/admin/adminStallDetail/TwelveSqMeter';
+import FifteenSqMeter from './pages/admin/adminStallDetail/FifteenSqMeter';
 
 function App() {
 
@@ -39,13 +51,89 @@ function App() {
 
   const logout = () => {
     localStorage.removeItem("currentuser");
-    window.location.href='/adminlogin';
+    window.location.href = '/adminlogin';
     // <About/>
   }
 
+  // database get sixSquareMeterPayment
+  const [sixSqMeter, setSixSquMeter] = useState([]);
+  useEffect(() => {
+    const q = query(
+      collection(db, "sixSquareMeterPayment"),
+      orderBy("createdAt"),
+      // limit(50)
+    );
+    const data = onSnapshot(q, (QuerySnapshot) => {
+      let sixSqMeter = [];
+      QuerySnapshot.forEach((doc) => {
+        sixSqMeter.push({ ...doc.data(), id: doc.id });
+      });
+      setSixSquMeter(sixSqMeter)
 
+    });
+
+    return () => data;
+  }, []);
+
+   // database get nineSquareMeterPayment
+   const [nineSqMeter, setNineSquMeter] = useState([]);
+   useEffect(() => {
+     const q = query(
+       collection(db, "nineSquareMeterPayment"),
+       orderBy("createdAt"),
+       // limit(50)
+     );
+     const data = onSnapshot(q, (QuerySnapshot) => {
+       let nineSqMeter = [];
+       QuerySnapshot.forEach((doc) => {
+        nineSqMeter.push({ ...doc.data(), id: doc.id });
+       });
+       setNineSquMeter(nineSqMeter)
+     });
+ 
+     return () => data;
+   }, []);
+
+   // database get twelveSquareMeterPayment
+   const [twelveSqMeter, setTwelveSquMeter] = useState([]);
+   useEffect(() => {
+     const q = query(
+       collection(db, "twelveSquareMeterPayment"),
+       orderBy("createdAt"),
+       // limit(50)
+     );
+     const data = onSnapshot(q, (QuerySnapshot) => {
+       let twelveSqMeter = [];
+       QuerySnapshot.forEach((doc) => {
+        twelveSqMeter.push({ ...doc.data(), id: doc.id });
+       });
+       setTwelveSquMeter(twelveSqMeter)
+     });
+ 
+     return () => data;
+   }, []);
+
+    // database get fifteenSquareMeterPayment
+    const [fifteenSqMeter, setFifteenSquMeter] = useState([]);
+    useEffect(() => {
+      const q = query(
+        collection(db, "fifteenSquareMeterPayment"),
+        orderBy("createdAt"),
+        // limit(50)
+      );
+      const data = onSnapshot(q, (QuerySnapshot) => {
+        let fifteenSqMeter = [];
+        QuerySnapshot.forEach((doc) => {
+          fifteenSqMeter.push({ ...doc.data(), id: doc.id });
+        });
+        setFifteenSquMeter(fifteenSqMeter)
+      });
+  
+      return () => data;
+    }, []);
   return (
-    <Router>
+    
+      <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
         {/* <Route exact path="/about" element={<About />} /> */}
@@ -64,9 +152,26 @@ function App() {
         <Route exact path="/floorplan" element={<FloorPlan />} />
         <Route exact path="/adminlogin" element={<AdminLogin setAdmin={setAdmin} />} />
         <Route exact path="/adminpanel" element={
-          admin ? <AdminPanel logout={logout} /> : <Home/>
+          admin ? <AdminPanel logout={logout} sixSqMeter={sixSqMeter} nineSqMeter={nineSqMeter} twelveSqMeter={twelveSqMeter} fifteenSqMeter={fifteenSqMeter} /> : <Home />
         } />
 
+
+
+        {/* // stall  */}
+        <Route exact path="/allstall" element={<AllStall />} />
+        {/* <Route exact path="/sixsq" element={<SixSq />} /> */}
+        <Route exact path="/invoice" element={<Invoice />} />
+        <Route exact path="/invoicenine" element={<InvoiceNine />} />
+        <Route exact path="/invoicetwelve" element={<InvoiceTwelve />} />
+        <Route exact path="/invoicefifteen" element={<InvoiceFifteen />} />
+
+
+
+      {/* admin stall detail route  */}
+      <Route exact path="/admin/sixsqmeter" element={<SixSqMeter sixSqMeter={sixSqMeter} />} />
+      <Route exact path="/admin/ninesqmeter" element={<NineSqMeter nineSqMeter={nineSqMeter} />} />
+      <Route exact path="/admin/twelvesqmeter" element={<TwelveSqMeter twelveSqMeter={twelveSqMeter} />} />
+      <Route exact path="/admin/fifteensqmeter" element={<FifteenSqMeter fifteenSqMeter={fifteenSqMeter} />} />
 
       </Routes>
     </Router>
