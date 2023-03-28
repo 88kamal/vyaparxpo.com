@@ -32,7 +32,7 @@ function NineSqMeter({ nineSqMeter }) {
                             <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                                 <div className="overflow-hidden">
                                     <table className="min-w-full border text-sm font-light text-white border-neutral-500">
-                                        <thead className="border-b font-medium bg-gray-900 dark:border-neutral-500">
+                                        <thead style={{ backgroundColor: 'rgb(40, 44, 52)' }} className="border-b font-medium  dark:border-neutral-500">
                                             <tr>
                                                 <th scope="col" className="border-r px-6 py-4 dark:border-neutral-500">
                                                     S.No.

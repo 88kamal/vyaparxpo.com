@@ -18,7 +18,7 @@ function SixSq() {
   const [travel, setTravel] = useState(5);
   const [fooding, setFooding] = useState(1);
   const [selectDay, setSelectedDay] = useState(1);
-  const [selectedStall, setSelectedStall] = useState('6 Sq. Meter');
+  const [selectedStall, setSelectedStall] = useState('6 Sq. Meter (3x2)');
 
   //  const context = useContext(allContext);
   //  const {names} = context;

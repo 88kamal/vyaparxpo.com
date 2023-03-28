@@ -37,6 +37,8 @@ import { collection, query, limit, orderBy, onSnapshot } from "firebase/firestor
 import NineSqMeter from './pages/admin/adminStallDetail/NineSqMeter';
 import TwelveSqMeter from './pages/admin/adminStallDetail/TwelveSqMeter';
 import FifteenSqMeter from './pages/admin/adminStallDetail/FifteenSqMeter';
+import Contact from './pages/Contact';
+import AboutVyaparXpo from './pages/About/AboutVyaparXpo';
 
 function App() {
 
@@ -138,6 +140,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         {/* <Route exact path="/about" element={<About />} /> */}
         <Route exact path="/whytoExhibit" element={<WhydoExhibit />} />
+        <Route exact path="/aboutvayparexpo" element={<AboutVyaparXpo />} />
         <Route exact path="/registrationfrom" element={<RegistrationForm />} />
         <Route exact path="/whyvisit" element={<WhyVisit />} />
         <Route exact path="/exhibitorprofile" element={<ProfileExhibitor />} />
@@ -146,10 +149,11 @@ function App() {
         <Route exact path="/profilevisitor" element={<ProfileVisitor />} />
         <Route exact path="/exhibitorregistration" element={<ExhibitorRegistration />} />
         <Route exact path="/visitorregistration" element={<VisitorRegistration />} />
-        <Route exact path="/bhustudentregistration" element={<BhuStudentRegistration />} />
+        <Route exact path="/studentregistration" element={<BhuStudentRegistration />} />
         <Route exact path="/visitor" element={<Visitor />} />
         <Route exact path="/registrationforsponsorship" element={<Registrationforsponsorship />} />
         <Route exact path="/floorplan" element={<FloorPlan />} />
+        <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/adminlogin" element={<AdminLogin setAdmin={setAdmin} />} />
         <Route exact path="/adminpanel" element={
           admin ? <AdminPanel logout={logout} sixSqMeter={sixSqMeter} nineSqMeter={nineSqMeter} twelveSqMeter={twelveSqMeter} fifteenSqMeter={fifteenSqMeter} /> : <Home />

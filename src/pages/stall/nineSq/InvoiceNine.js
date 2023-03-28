@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 function InvoiceNine() {
   const stallAndPaymentInfo = JSON.parse(sessionStorage.getItem("paymentId"));
@@ -189,9 +190,12 @@ function InvoiceNine() {
                   </tbody>
                 </table>
               </div>
-              <div className=" flex justify-end">
+              <div className=" flex justify-center gap-2">
+                <Link to={'/'}>
+                  <button type="button" className="focus:outline-none text-white bg-red-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Home</button></Link>
                 <button type="button" onClick={capturePdf} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Download</button>
               </div>
+
             </div>
           </div>
         </div>

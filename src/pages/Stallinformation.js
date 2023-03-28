@@ -53,8 +53,7 @@ function Stallinformation() {
 </h1>
            </div>
            <ScrollBtn/>
-            <Map />
-            <Footer />
+           
         </Layout>
     )
 }

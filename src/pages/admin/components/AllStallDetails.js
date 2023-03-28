@@ -19,7 +19,7 @@ function AllStallDetails({ sixSqMeter ,nineSqMeter, twelveSqMeter, fifteenSqMete
                                     <AiFillCodeSandboxSquare size={50} />
                                 </div>
                                 <h2 className="title-font font-medium text-3xl text-gray-100 fonts1">{sixSqMeter.length}</h2>
-                                <p className=" text-purple-500  font-bold">6 Sq. Meter</p>
+                                <p className=" text-purple-500  font-bold">6 Sq. Meter Payment Success</p>
                             </div>
                         </Link>
 
@@ -31,7 +31,7 @@ function AllStallDetails({ sixSqMeter ,nineSqMeter, twelveSqMeter, fifteenSqMete
                                     <AiFillCodeSandboxSquare size={50} />
                                 </div>
                                 <h2 className="title-font font-medium text-3xl text-gray-100 fonts1">{nineSqMeter.length}</h2>
-                                <p className=" text-pink-500  font-bold">9 Sq. Meter</p>
+                                <p className=" text-pink-500  font-bold">9 Sq. Meter Payment Success</p>
                             </div>
                         </Link>
 
@@ -43,7 +43,7 @@ function AllStallDetails({ sixSqMeter ,nineSqMeter, twelveSqMeter, fifteenSqMete
                                     <AiFillCodeSandboxSquare size={50} />
                                 </div>
                                 <h2 className="title-font font-medium text-3xl text-gray-100 fonts1">{twelveSqMeter.length}</h2>
-                                <p className=" text-green-500 font-bold">12 Sq. Meter</p>
+                                <p className=" text-green-500 font-bold">12 Sq. Meter Payment Success</p>
                             </div>
                         </Link>
 
@@ -55,7 +55,7 @@ function AllStallDetails({ sixSqMeter ,nineSqMeter, twelveSqMeter, fifteenSqMete
                                     <AiFillCodeSandboxSquare size={50} />
                                 </div>
                                 <h2 className="title-font font-medium text-3xl text-gray-100 fonts1">{fifteenSqMeter.length}</h2>
-                                <p className=" text-orange-500 font-bold">15 Sq. Meter</p>
+                                <p className=" text-orange-500 font-bold">15 Sq. Meter Payment Success</p>
                             </div>
                         </Link>
 

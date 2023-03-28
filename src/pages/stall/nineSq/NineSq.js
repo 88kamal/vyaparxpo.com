@@ -8,7 +8,7 @@ function NineSq() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [stall, setStall] = useState(58);
+  const [stall, setStall] = useState(58500);
   const [branding, setBranding] = useState(5);
   const [digitalDisplay, setDigitalDisplay] = useState(5);
   const [electricitySupply, setElectricitySupply] = useState(5);
@@ -98,7 +98,7 @@ function NineSq() {
         setTimeout(() => {
           window.location.href = '/invoicenine'
         }, 2000);
-         addDoc(nineSquareMeterRef, {
+        addDoc(nineSquareMeterRef, {
           name: name,
           email: email,
           phone: phone,
@@ -122,8 +122,8 @@ function NineSq() {
           hotelPerDay,
           travelPerDay,
           GrandTotal,
-          totalWithoutGst, 
-          totalWithGst, 
+          totalWithoutGst,
+          totalWithGst,
           hotelPlusGst,
         })
       },
@@ -139,9 +139,9 @@ function NineSq() {
     setName("");
     setEmail("");
     setPhone("");
-    
+
     // setPayId(id)
- ;
+    ;
 
     // database firbase
     // try {
@@ -212,7 +212,7 @@ function NineSq() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-}, [])
+  }, [])
 
   return (
     <div>

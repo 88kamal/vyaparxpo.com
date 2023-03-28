@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 function InvoiceTwelve() {
   const stallAndPaymentInfo = JSON.parse(sessionStorage.getItem("paymentId"));
-  console.log(stallAndPaymentInfo)
+  // console.log(stallAndPaymentInfo)
 
   const { name, email, phone, stall, branding, digitalDisplay, electricitySupply, airCompressor, fooding, hotelAccomodation, paymentId, selectDay, travel, totalWithoutGst, totalWithGst, hotelPlusGst,
     brandingWithPerDay,
@@ -18,13 +19,17 @@ function InvoiceTwelve() {
 
   } = stallAndPaymentInfo
 
-  const capturePdf = () =>{
+  const capturePdf = () => {
     window.print()
-    window.location.href= '/'
+  }
+
+  const removeSessionStorage = () => {
+    const removeSessionStorage = sessionStorage.removeItem("paymentId");
   }
   useEffect(() => {
     window.scrollTo(0, 0)
-}, [])
+  }, [])
+
   return (
     <div className='pay Voice container mx-auto px-4 m-5'>
       <div className="pdf border border-black p-5">
@@ -189,9 +194,12 @@ function InvoiceTwelve() {
                   </tbody>
                 </table>
               </div>
-              <div className=" flex justify-end">
+              <div className=" flex justify-center gap-2">
+                <Link to={'/'}>
+                  <button onClick={removeSessionStorage} type="button" className="focus:outline-none text-white bg-red-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Home</button></Link>
                 <button type="button" onClick={capturePdf} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Download</button>
               </div>
+
             </div>
           </div>
         </div>

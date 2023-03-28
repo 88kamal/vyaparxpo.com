@@ -104,7 +104,7 @@ function Navbar() {
                                          
                                         </button>
                                         <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
-                                            <li className><a className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">About Vyapar Expo 2023</a></li>
+                                            <li className><Link to={'/aboutvayparexpo'} className=" bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">About Vyapar Expo 2023</Link></li>
                                             <hr />
                                             <li className><Link to={'/aboutorganizer'} className="bg-[#ff0000] text-sm font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap ">About Oraganiser</Link></li>
                                             <hr />
@@ -167,7 +167,10 @@ function Navbar() {
                                         <Link className=' flex' to={'/visitor'} > VISITOR PASS</Link>
                                     </li>
                                     <li className="text-white md:text-gray-900 font-semibold text-sm hover:text-[#ff0000] uppercase   md:rounded-full">
-                                        <Link className=' flex' to={'/bhustudentregistration'} > BHU STUDENT REGISTRATION</Link>
+                                        <Link className=' flex' to={'/studentregistration'} >STUDENT REGISTRATION</Link>
+                                    </li>
+                                    <li className="text-white md:text-gray-900 font-semibold text-sm hover:text-[#ff0000] uppercase   md:rounded-full">
+                                        <Link className=' flex' to={'/contact'} >Conatct Us</Link>
                                     </li>
                                    
                                     {/* <li className="text-gray-600 font-semibold text-sm hover:text-[#ff0000] uppercase">

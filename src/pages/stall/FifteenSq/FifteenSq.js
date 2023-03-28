@@ -8,7 +8,7 @@ function FifteenSq() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [stall, setStall] = useState(9);
+  const [stall, setStall] = useState(97500);
   const [branding, setBranding] = useState(5);
   const [digitalDisplay, setDigitalDisplay] = useState(5);
   const [electricitySupply, setElectricitySupply] = useState(5);
