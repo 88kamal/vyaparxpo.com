@@ -35,8 +35,10 @@ function Hero() {
                 </div> */}
 
                 <div className=" ">
-                    <h3 className="font-bold text-xl md:text-2xl mb-5 fonts1 ">JOIN THE LEADING BRAND AND MANUFACTURER OF FOOD & AGRICLTURE</h3>
-                    <h2 className=' text-lg md:text-lg mb-5 fonts1 font-bold '>10TH – 15TH JULY 2023 | IIT – BHU CAMPUS, VARANASI</h2>
+                    <h3 className="font-bold text-xl md:text-2xl mb-5 fonts1 uppercase ">JOIN THE LEADING BRAND AND MANUFACTURER OF FOOD & Agriculture</h3>
+                    <h2 className=' text-lg md:text-lg mb-5 fonts1 font-bold '>16-17-18-19-20 OCTOBER, 2023
+                        AGRICULTURE GROUND (BHU CAMPUS),
+                        VARANASI</h2>
                 </div>
                 <div className=" flex space-x-2  ">
                     <div className="icon">
@@ -50,6 +52,9 @@ function Hero() {
                     </div>
                 </div>
                 <div className=' py-3 '>
+                <Link to={'/exhibitorregistration'}>
+                        <button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 fonts2 ">EXHIBITOR REGISTRATION</button>
+                    </Link>
                     <Link to={'/visitorregistration'}>
                         <button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 fonts2 ">VISITOR REGISTRATION</button>
                     </Link>

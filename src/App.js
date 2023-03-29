@@ -39,6 +39,8 @@ import TwelveSqMeter from './pages/admin/adminStallDetail/TwelveSqMeter';
 import FifteenSqMeter from './pages/admin/adminStallDetail/FifteenSqMeter';
 import Contact from './pages/Contact';
 import AboutVyaparXpo from './pages/About/AboutVyaparXpo';
+import HotelAccomodation from './pages/HotelAccomodation';
+import Gallery from './pages/Gallery';
 
 function App() {
 
@@ -154,6 +156,8 @@ function App() {
         <Route exact path="/registrationforsponsorship" element={<Registrationforsponsorship />} />
         <Route exact path="/floorplan" element={<FloorPlan />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/gallery" element={<Gallery />} />
+        <Route exact path="/hotelaccomodation" element={<HotelAccomodation />} />
         <Route exact path="/adminlogin" element={<AdminLogin setAdmin={setAdmin} />} />
         <Route exact path="/adminpanel" element={
           admin ? <AdminPanel logout={logout} sixSqMeter={sixSqMeter} nineSqMeter={nineSqMeter} twelveSqMeter={twelveSqMeter} fifteenSqMeter={fifteenSqMeter} /> : <Home />

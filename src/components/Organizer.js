@@ -51,14 +51,15 @@ function Organizer() {
                             </div> */}
                             <div className="flex flex-wrap md:-m-14">
                                 <div className="p-2 md:w-1/2 w-1/2">
-                                    <div className=" bg-yellow-400 py-5 px-5 rounded-xl">
-                                        <p className="leading-relaxed fonts4 font-bold text-black text-sm md:text-lg   text-center ">10<sup>TH</sup>-15<sup>TH</sup> July  2023</p>
+                                    <div className=" bg-yellow-400 py-5 md:py-8 px-5 rounded-xl">
+                                        <p className="leading-relaxed fonts4 font-bold text-black text-sm md:text-lg   text-center ">16-17-18-19-20 OCTOBER, 2023</p>
                                         {/* <br /> */}
                                     </div>
                                 </div>
                                 <div className="p-2 md:w-1/2 w-1/2">
                                     <div className=" bg-gray-200 py-[9px] md:py-5 px-5 rounded-xl">
-                                        <p className="leading-relaxed text-center text-sm md:text-lg    fonts4 font-bold text-black">IIT-BHU CAMPUS VARANSI </p>
+                                        <p className="leading-relaxed text-center text-sm md:text-lg    fonts4 font-bold text-black">AGRICULTURE GROUND (BHU CAMPUS),
+VARANASI</p>
                                         
                                     </div>
                                 </div>
@@ -70,7 +71,7 @@ function Organizer() {
                                 </div>
                                  <div className="p-2 md:w-1/2 w-1/2">
                                     <div className="h-full bg-yellow-400 py-5 px-5 rounded-xl">
-                                        <p className="leading-relaxed text-center text-sm md:text-lg    fonts4 font-bold text-black">350+ EXHIBITOR</p>
+                                        <p className="leading-relaxed text-center text-sm md:text-lg    fonts4 font-bold text-black">300+ EXHIBITOR</p>
                                         {/* <br /> */}
                                     </div>
                                 </div>

@@ -177,7 +177,7 @@ export default function WhydoExhibit() {
 
                                             </div>
                                             <div className="p-4 lg:w-1/3 md:w-1/2">
-                                                <Link to={'/exhibitorregistration'} >
+                                                <Link to={'/hotelaccomodation'} >
                                                     <div className="h-full flex flex-col items-center text-center">
                                                         <img alt="team" className="flex-shrink-0 rounded-lg w-20 h-16 mb-1" src="icons/Pasted Graphic 5.png" />
                                                         <div className="w-full">

@@ -14,12 +14,17 @@ function Product() {
                         </div>
                         <div className="mid mb-5 md:m-0">
                             <h1 className=' container  mx-auto font-bold text-2xl md:text-3xl fonts2 mb-2'>Content</h1>
-                            <p className=' text-justify fonts4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, accusamus impedit aliquid, mollitia temporibus, ab quasi unde earum tempora molestiae eos. Enim, minima voluptas inventore vitae veritatis repudiandae eum consequatur. Commodi ex libero vel nisi, voluptatum maiores, delectus veritatis excepturi impedit molestias tenetur accusamus. In!</p>
+                            <p className=' text-justify fonts4'>Starting operation in the year 2023, VYAPAR...INDIA is a leading business exhibition company which is conducting B2B, B2C , D2C exhibitions , conference franchise meet with a competitive edge across Indian market .
+<br />
+                                Vyapar Expo 2023 is the sole event in the globe where one can find all solutions related to the Food & Agriculture industry. From Brand & technologies of automation to packaging machinery to packaging materials, from raw materials for all kinds of ingredients to knowledge of ideas and from relations to business deals, Vyapar Expo 2023 Varanasi is the only place where entire industry comes under one roof.
+<br />
+                                Vyapar Expo 2023 Varanasi is expected to host more than 300+ Exhibitors and approximately 20,000+ visitors and delegates from all over India .Food and Agriculture segment is at the nascent stage of branding and its true potential is still to be explored.
+                            </p>
                         </div>
                         <div className="right mb-5 md:m-0">
-                            <div className="lg:max-w-[100%] lg:w-full md:w-1/2 w-full">
-                            {/* <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://res.cloudinary.com/dzaujvmcy/video/upload/v1678174908/agriculture_profile_video_qluzsi.mp4" type="video/mp4" autoPlay muted loop /> */}
-                            </div>
+                            {/* <div className="lg:max-w-[100%] lg:w-full md:w-1/2 w-full">
+                                <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://res.cloudinary.com/dzaujvmcy/video/upload/v1678174908/agriculture_profile_video_qluzsi.mp4" type="video/mp4" autoPlay muted loop />
+                            </div> */}
                         </div>
                     </div>
                 </section>
