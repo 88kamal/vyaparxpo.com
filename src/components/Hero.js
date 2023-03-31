@@ -19,7 +19,7 @@ function Hero() {
                     <h1 className="md:text-6xl text-[32px] font-bold mb-5 fonts2 bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}> FOOD & AGRICULTURE </h1>
                 </div>
                 <div className="bg-white w-[324px] md:w-[608px]">
-                    <h1 className="md:text-6xl text-[32px] font-bold mb-5 fonts2 bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}>VAYAPAR EXPO 2023</h1>
+                    <h1 className="md:text-6xl text-[32px] font-bold mb-5 fonts2 bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}>VYAPAR EXPO 2023</h1>
                 </div>
 
                 {/* <div className=" absolute left-[340px] top-[385px]    md:left-[87.1em] md:top-[17em] bg-[#ff0000] p-2 ">
