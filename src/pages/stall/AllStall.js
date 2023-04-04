@@ -149,7 +149,7 @@ function AllStall() {
 
 
             })
-            toast.success('Exhibitor Registration Success', {
+            toast.success('Stall Selected Success', {
                 position: "top-center",
                 autoClose: 1000,
                 hideProgressBar: false,
