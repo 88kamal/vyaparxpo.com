@@ -19,14 +19,16 @@ export default function AboutVyaparXpo() {
                     <h1 className=' uppercase text-lg font-semibold fonts2'>Vaypar Expo 2023</h1>
                   </div>
                   <div className="logo_right">
-                    <h1 className=''>Logo BHU</h1>
+                    <h1 className=''>
+                      <img className=' w-56' src="gallery/logo.png" alt="" />
+                    </h1>
                   </div>
                 </div>
               </div>
               <div className="">
                 <h1 className='text-center text-xl mb-2 font-semibold '>16-17-18-19-20 OCTOBER, 2023</h1>
                 <h1 className='text-center text-xl font-bold '>AGRICULTURE GROUND, BHU CAMPUS VARANASI – UTTAR PRADESH 221005</h1>
-                <h1 className='text-center text-3xl font-extrabold mb-5 '>ABOUT VYAPAR EXPO 2023</h1>
+                <h1 className='text-center text-xl md:text-3xl font-extrabold mb-5 '>ABOUT VYAPAR EXPO 2023</h1>
               </div>
 
             </div>

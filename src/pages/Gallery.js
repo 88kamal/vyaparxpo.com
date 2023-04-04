@@ -4,11 +4,10 @@ import Layout from '../components/Layout'
 function Gallery() {
     return (
         <Layout>
-            <section className="text-gray-600 body-font">
-                <div className="container px-5 py-10 mx-auto flex flex-wrap">
-                    <div className="flex w-full mb-20 flex-wrap">
-                        {/* <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Master Cleanse Reliac Heirloom</h1> */}
-                    </div>
+            <section className="text-gray-600 body-font"> 
+            <h1 className=' text-center mt-28 text-2xl mb-5 font-bold underline'>Our Gallery</h1>
+                <div className="container px-5  mx-auto flex flex-wrap">
+                   
                     <div className="flex flex-wrap md:-m-2 -m-1">
                         <div className="flex flex-wrap w-1/2">
                             <div className="md:p-2 p-1 w-1/2">

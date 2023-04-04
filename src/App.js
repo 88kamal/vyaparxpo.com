@@ -60,81 +60,80 @@ function App() {
   }
 
   // database get sixSquareMeterPayment
-  const [sixSqMeter, setSixSquMeter] = useState([]);
+  const [allStallDetail, setAllStallDetail] = useState([]);
   useEffect(() => {
     const q = query(
-      collection(db, "sixSquareMeterPayment"),
+      collection(db, "selectedStallDetails"),
       orderBy("createdAt"),
       // limit(50)
     );
     const data = onSnapshot(q, (QuerySnapshot) => {
-      let sixSqMeter = [];
+      let allStallDetail = [];
       QuerySnapshot.forEach((doc) => {
-        sixSqMeter.push({ ...doc.data(), id: doc.id });
+        allStallDetail.push({ ...doc.data(), id: doc.id });
       });
-      setSixSquMeter(sixSqMeter)
-
+      setAllStallDetail(allStallDetail)
     });
 
     return () => data;
   }, []);
 
    // database get nineSquareMeterPayment
-   const [nineSqMeter, setNineSquMeter] = useState([]);
-   useEffect(() => {
-     const q = query(
-       collection(db, "nineSquareMeterPayment"),
-       orderBy("createdAt"),
-       // limit(50)
-     );
-     const data = onSnapshot(q, (QuerySnapshot) => {
-       let nineSqMeter = [];
-       QuerySnapshot.forEach((doc) => {
-        nineSqMeter.push({ ...doc.data(), id: doc.id });
-       });
-       setNineSquMeter(nineSqMeter)
-     });
+  //  const [nineSqMeter, setNineSquMeter] = useState([]);
+  //  useEffect(() => {
+  //    const q = query(
+  //      collection(db, "nineSquareMeterPayment"),
+  //      orderBy("createdAt"),
+  //      // limit(50)
+  //    );
+  //    const data = onSnapshot(q, (QuerySnapshot) => {
+  //      let nineSqMeter = [];
+  //      QuerySnapshot.forEach((doc) => {
+  //       nineSqMeter.push({ ...doc.data(), id: doc.id });
+  //      });
+  //      setNineSquMeter(nineSqMeter)
+  //    });
  
-     return () => data;
-   }, []);
+  //    return () => data;
+  //  }, []);
 
-   // database get twelveSquareMeterPayment
-   const [twelveSqMeter, setTwelveSquMeter] = useState([]);
-   useEffect(() => {
-     const q = query(
-       collection(db, "twelveSquareMeterPayment"),
-       orderBy("createdAt"),
-       // limit(50)
-     );
-     const data = onSnapshot(q, (QuerySnapshot) => {
-       let twelveSqMeter = [];
-       QuerySnapshot.forEach((doc) => {
-        twelveSqMeter.push({ ...doc.data(), id: doc.id });
-       });
-       setTwelveSquMeter(twelveSqMeter)
-     });
+  //  // database get twelveSquareMeterPayment
+  //  const [twelveSqMeter, setTwelveSquMeter] = useState([]);
+  //  useEffect(() => {
+  //    const q = query(
+  //      collection(db, "twelveSquareMeterPayment"),
+  //      orderBy("createdAt"),
+  //      // limit(50)
+  //    );
+  //    const data = onSnapshot(q, (QuerySnapshot) => {
+  //      let twelveSqMeter = [];
+  //      QuerySnapshot.forEach((doc) => {
+  //       twelveSqMeter.push({ ...doc.data(), id: doc.id });
+  //      });
+  //      setTwelveSquMeter(twelveSqMeter)
+  //    });
  
-     return () => data;
-   }, []);
+  //    return () => data;
+  //  }, []);
 
-    // database get fifteenSquareMeterPayment
-    const [fifteenSqMeter, setFifteenSquMeter] = useState([]);
-    useEffect(() => {
-      const q = query(
-        collection(db, "fifteenSquareMeterPayment"),
-        orderBy("createdAt"),
-        // limit(50)
-      );
-      const data = onSnapshot(q, (QuerySnapshot) => {
-        let fifteenSqMeter = [];
-        QuerySnapshot.forEach((doc) => {
-          fifteenSqMeter.push({ ...doc.data(), id: doc.id });
-        });
-        setFifteenSquMeter(fifteenSqMeter)
-      });
+  //   // database get fifteenSquareMeterPayment
+  //   const [fifteenSqMeter, setFifteenSquMeter] = useState([]);
+  //   useEffect(() => {
+  //     const q = query(
+  //       collection(db, "fifteenSquareMeterPayment"),
+  //       orderBy("createdAt"),
+  //       // limit(50)
+  //     );
+  //     const data = onSnapshot(q, (QuerySnapshot) => {
+  //       let fifteenSqMeter = [];
+  //       QuerySnapshot.forEach((doc) => {
+  //         fifteenSqMeter.push({ ...doc.data(), id: doc.id });
+  //       });
+  //       setFifteenSquMeter(fifteenSqMeter)
+  //     });
   
-      return () => data;
-    }, []);
+  //     return () => data;
+  //   }, []);
   return (
     
       <Router>
@@ -160,26 +159,26 @@ function App() {
         <Route exact path="/hotelaccomodation" element={<HotelAccomodation />} />
         <Route exact path="/adminlogin" element={<AdminLogin setAdmin={setAdmin} />} />
         <Route exact path="/adminpanel" element={
-          admin ? <AdminPanel logout={logout} sixSqMeter={sixSqMeter} nineSqMeter={nineSqMeter} twelveSqMeter={twelveSqMeter} fifteenSqMeter={fifteenSqMeter} /> : <Home />
+          admin ? <AdminPanel logout={logout} allStallDetail={allStallDetail}/> : <Home />
         } />
 
 
 
         {/* // stall  */}
         <Route exact path="/allstall" element={<AllStall />} />
-        {/* <Route exact path="/sixsq" element={<SixSq />} /> */}
+        {/* <Route exact path="/sixsq" element={<SixSq />} />
         <Route exact path="/invoice" element={<Invoice />} />
         <Route exact path="/invoicenine" element={<InvoiceNine />} />
         <Route exact path="/invoicetwelve" element={<InvoiceTwelve />} />
-        <Route exact path="/invoicefifteen" element={<InvoiceFifteen />} />
+        <Route exact path="/invoicefifteen" element={<InvoiceFifteen />} /> */}
 
 
 
       {/* admin stall detail route  */}
-      <Route exact path="/admin/sixsqmeter" element={<SixSqMeter sixSqMeter={sixSqMeter} />} />
+      {/* <Route exact path="/admin/sixsqmeter" element={<SixSqMeter sixSqMeter={sixSqMeter} />} />
       <Route exact path="/admin/ninesqmeter" element={<NineSqMeter nineSqMeter={nineSqMeter} />} />
       <Route exact path="/admin/twelvesqmeter" element={<TwelveSqMeter twelveSqMeter={twelveSqMeter} />} />
-      <Route exact path="/admin/fifteensqmeter" element={<FifteenSqMeter fifteenSqMeter={fifteenSqMeter} />} />
+      <Route exact path="/admin/fifteensqmeter" element={<FifteenSqMeter fifteenSqMeter={fifteenSqMeter} />} /> */}
 
       </Routes>
     </Router>

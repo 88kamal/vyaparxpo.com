@@ -42,7 +42,7 @@ function WhyVisit() {
             <Link to={'/visitorregistration'} ><button type="button" class="text-white mt-10 bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">FREE VISITOR REGISTRATION</button></Link>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
+            <img className="object-cover object-center rounded-2xl" alt="hero" src="gallery/9.jpg" />
           </div>
         </div>
       </section>

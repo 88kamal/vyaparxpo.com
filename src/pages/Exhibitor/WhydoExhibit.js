@@ -11,11 +11,10 @@ export default function WhydoExhibit() {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <div>
-            <Navbar2 />
+        <Layout>
             <div>
                 <div className="">
-                    <img className=' mt-20' width={1500} src='https://rencotools.com/placeholder/600x300/D5D5D5/584959' />
+                    <img className=' mt-20' width={1500} src='image/reg2.jpg' />
                 </div>
 
                 <div className=' container mx-auto p-5 py-10'>
@@ -48,7 +47,7 @@ export default function WhydoExhibit() {
 
                         </div>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-5">
-                            <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
+                            <img className="object-cover object-center rounded-2xl" alt="hero" src="gallery/6.jpg" />
                         </div>
                     </div>
                 </section>
@@ -213,8 +212,6 @@ export default function WhydoExhibit() {
                 </div>
             </div>
             <ScrollBtn />
-            <Map />
-            <Footer />
-        </div>
+        </Layout>
     )
 }

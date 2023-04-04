@@ -4,7 +4,7 @@ import { db } from '../../firebase/FireBaseConfig'
 import { collection, addDoc } from 'firebase/firestore'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {  useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 function ExhibitorRegistration() {
     const [exhibitingCompanysName, setExhibitingCompanysName] = useState('');
     const [gstno, setGstno] = useState('');
@@ -21,7 +21,7 @@ function ExhibitorRegistration() {
     const [selectedStallSpace, setSelectedStallSpace] = useState([]);
 
     const [message, setMessage] = useState('');
-const navigate = useNavigate()
+    const navigate = useNavigate()
 
     function handleSelectChange(event) {
         setSelectedCountry(event.target.value);
@@ -33,71 +33,58 @@ const navigate = useNavigate()
 
     const Register = async (e) => {
         // // validation
-        if (exhibitingCompanysName === '' || gstno === '' || mobile === '' || city === '' || email === '' || country === '' || pin === '' || panNumber === '' || stall === '') {
-            return toast.error('Please Fill All Fields', {
-                position: "top-center",
-                autoClose: 1000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-            });
-        }
-        const exhibitorRegistrationRef = collection(db, "exhibitorRegistration")
-
-        try {
-            await addDoc(exhibitorRegistrationRef, {
-                exhibitingCompanysName: exhibitingCompanysName,
-                gstno: gstno,
-                mobile: mobile,
-                city: city,
-                email: email,
-                country: country,
-                website: website,
-                pin: pin,
-                panNumber: panNumber,
-                panHolder: panHolder,
-                stall: stall,
-                selectedCountry: selectedCountry,
-                selectedStallSpace: selectedStallSpace,
-                message: message,
-                createdAt: new Date().toLocaleString(),
+       
+        // try {
+        //     await addDoc(exhibitorRegistrationRef, {
+        //         exhibitingCompanysName: exhibitingCompanysName,
+        //         gstno: gstno,
+        //         mobile: mobile,
+        //         city: city,
+        //         email: email,
+        //         country: country,
+        //         website: website,
+        //         pin: pin,
+        //         panNumber: panNumber,
+        //         panHolder: panHolder,
+        //         stall: stall,
+        //         selectedCountry: selectedCountry,
+        //         selectedStallSpace: selectedStallSpace,
+        //         message: message,
+        //         createdAt: new Date().toLocaleString(),
 
 
-            })
-            toast.success('Exhibitor Registration Success', {
-                position: "top-center",
-                autoClose: 1000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-            });
-        } catch (error) {
-            console.log(error)
-        }
+        //     })
+        //     toast.success('Exhibitor Registration Success', {
+        //         position: "top-center",
+        //         autoClose: 1000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined,
+        //         theme: "colored",
+        //     });
+        // } catch (error) {
+        //     console.log(error)
+        // }
 
-        setExhibitingCompanysName('');
-        setGstno('');
-        setMobile('');
-        setCity('');
-        setEmail('');
-        setCountry('');
-        setWebsite('');
-        setPin('');
-        setPanNumber('');
-        setPanHolder('');
-        setStall('')
-        setSelectedCountry('');
-        setSelectedStallSpace('');
-        setMessage('')
-       setTimeout(() => {
-        navigate('/allstall')
-       }, 1500);
+        // setExhibitingCompanysName('');
+        // setGstno('');
+        // setMobile('');
+        // setCity('');
+        // setEmail('');
+        // setCountry('');
+        // setWebsite('');
+        // setPin('');
+        // setPanNumber('');
+        // setPanHolder('');
+        // setStall('')
+        // setSelectedCountry('');
+        // setSelectedStallSpace('');
+        // setMessage('')
+        // setTimeout(() => {
+            navigate('/allstall')
+        // }, 1500);
 
     }
 

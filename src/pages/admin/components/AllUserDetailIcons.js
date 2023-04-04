@@ -5,7 +5,7 @@ import { BiUserCircle } from 'react-icons/bi'
 
 function AllUserDetailIcons({ exhibitor, visitor }) {
     return (
-        <section className="text-gray-600 body-font mt-11">
+        <section className="text-gray-600 body-font mt-11 mb-10">
             <div className="container px-5 mx-auto">
                 {/* <div className="flex flex-col text-center w-full mb-10">
                     <h1 className="sm:text-3xl text-2xl font-bold fonts2 title-font mb-4 text-gray-900">Welcome To Vaypar Expo <span className=' text-red-500 text-lg fonts1'>Admin Panel</span></h1>

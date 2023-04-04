@@ -7,7 +7,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import AllStallDetails from './components/AllStallDetails';
 // import "react-tabs/style/react-tabs.css";
 
-function AdminPanel({ logout, sixSqMeter,nineSqMeter,twelveSqMeter,fifteenSqMeter }) {
+function AdminPanel({ logout,allStallDetail }) {
   const [exhibitor, setexhibitor] = useState([]);
   useEffect(() => {
     const q = query(
@@ -72,7 +72,7 @@ function AdminPanel({ logout, sixSqMeter,nineSqMeter,twelveSqMeter,fifteenSqMete
     <div className=' h-[100%] md:h-[80em]' style={{ backgroundColor: 'rgb(32, 33, 36)' }}>
       <AdminNav logout={logout} />
       <AllUserDetailIcons exhibitor={exhibitor} visitor={visitor} />
-      <AllStallDetails sixSqMeter={sixSqMeter}  nineSqMeter={nineSqMeter} twelveSqMeter={twelveSqMeter} fifteenSqMeter={fifteenSqMeter}  />
+      {/* <AllStallDetails allStallDetail={allStallDetail}  /> */}
       <div className="tab container mx-auto ">
         <Tabs defaultIndex={0} className=" " >
           <TabList className="md:flex md:space-x-8 bg-  grid grid-cols-2 text-center gap-4   md:justify-center mb-10 ">
@@ -88,6 +88,9 @@ function AdminPanel({ logout, sixSqMeter,nineSqMeter,twelveSqMeter,fifteenSqMete
             <Tab>
               <button type="button" className="font-medium border-b-2 border-orange-500 bg-[#ffffff12] text-orange-500 rounded-xl text-xl shadow-2xl hover:shadow-orange-700   px-5 py-1.5 text-center ">Sponsorship</button>
             </Tab>
+            <Tab>
+              <button type="button" className="font-medium border-b-2 border-orange-500 bg-[#ffffff12] text-orange-500 rounded-xl text-xl shadow-2xl hover:shadow-orange-700   px-5 py-1.5 text-center ">All Stall Detail</button>
+            </Tab>
           </TabList>
           <TabPanel>
             <Exhibitor />
@@ -100,6 +103,9 @@ function AdminPanel({ logout, sixSqMeter,nineSqMeter,twelveSqMeter,fifteenSqMete
           </TabPanel>
           <TabPanel>
             <Sponsorship />
+          </TabPanel>
+          <TabPanel>
+            <AllStallDetails allStallDetail={allStallDetail} />
           </TabPanel>
         </Tabs>
       </div>

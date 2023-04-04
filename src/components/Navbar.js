@@ -32,7 +32,7 @@ function Navbar() {
                 //   height: navSize,
                 transition: "all 0.9s"
             }} >
-                <div className=' overlayNav bg-white shadow-lg '>
+                <div className=' overlayNav bg-gray-100 shadow-lg '>
                     <div className="justify-between px-2  md:items-center md:flex    ">
                         <div>
                             <div className="flex items-center justify-between py-3 md:block">

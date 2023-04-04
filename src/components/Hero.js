@@ -6,19 +6,19 @@ import { AiFillInstagram } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 function Hero() {
     return (
-        <section className="relative h-screen flex flex-col md:items-start  justify-center    text-white py-0 px-3">
+        <section className="relative mt-[88px] h-screen flex flex-col md:items-start  justify-center    text-white py-0 px-3">
             <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-                {/* <video className="min-w-full min-h-full absolute object-cover" src="https://firebasestorage.googleapis.com/v0/b/videos-5c17d.appspot.com/o/My%20Video%203.mp4?alt=media&token=43cde305-bb2a-4bd9-aa45-582c7d67be3b" type="video/mp4" autoPlay  muted loop /> */}
+                <video className="min-w-full min-h-full absolute object-cover" src="https://firebasestorage.googleapis.com/v0/b/vayparexpodatabase.appspot.com/o/My%20Video4.mp4?alt=media&token=924eeebe-b70b-45a2-9ca5-2e9e3a15d381" type="video/mp4" autoPlay  muted loop />
             </div>
 
-            <div className="video-content space-y-2 mt-24 md:mt-40 md:ml-[40px]  ">
-                <div className="bg-white w-[231px] md:w-[433px] ">
+            <div className="video-content space-y-2 mt-5 md:mt-40 md:ml-[40px]  ">
+                <div className="bg-gray-300 w-[231px] md:w-[433px] ">
                     <h1 className="md:text-6xl text-[32px] font-bold  fonts2  bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}>1ST NATIONAL</h1>
                 </div>
-                <div className="bg-white w-[363px] md:w-[681px]">
+                <div className="bg-gray-300 w-[363px] md:w-[681px]">
                     <h1 className="md:text-6xl text-[32px] font-bold mb-5 fonts2 bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}> FOOD & AGRICULTURE </h1>
                 </div>
-                <div className="bg-white w-[324px] md:w-[608px]">
+                <div className="bg-gray-300 w-[306px] md:w-[574px]">
                     <h1 className="md:text-6xl text-[32px] font-bold mb-5 fonts2 bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}>VYAPAR EXPO 2023</h1>
                 </div>
 

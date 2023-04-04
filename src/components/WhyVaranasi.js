@@ -4,7 +4,7 @@ function WhyVaranasi() {
     return (
         <div>
 
-            <section className="text-gray-600 body-font">
+            <section className="text-gray-600 body-font mb-10 ">
                 <h1 className=' container px-4 mx-auto  font-bold text-2xl md:text-3xl fonts2 mb-5'>WHY <span className=' text-[#ff0000]   '>VARANASI?</span></h1>
                 <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-3 md:mb-0 items-center text-center">

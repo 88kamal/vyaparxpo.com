@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoLogoWhatsapp } from 'react-icons/io'
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -19,16 +20,16 @@ function Footer() {
                             {/* <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2> */}
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Home</a>
+                                    <Link to={'/'} className="text-gray-900 hover:text-green-500 cursor-pointer">Home</Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">About</a>
+                                    <Link to={'/aboutvayparexpo'} className="text-gray-900 hover:text-green-500 cursor-pointer">About</Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Exhibitor</a>
+                                    <Link to={'/whytoExhibit'} className="text-gray-900 hover:text-green-500 cursor-pointer">Exhibitor</Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Visitor</a>
+                                    <Link to={'/whyvisit'} className="text-gray-900 hover:text-green-500 cursor-pointer">Visitor</Link>
                                 </li>
                                 <li>
                                     <a className="text-gray-900 hover:text-green-500 cursor-pointer">Book your Stand</a>
@@ -87,7 +88,7 @@ function Footer() {
                 </div>
                 <div className="bg-red-800">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p className="text-gray-900 text-sm text-center sm:text-left">© 2023 <span className='fonts2'>VyaparXpo</span>
+                        <p className="text-white text-sm text-center sm:text-left ">© 2023 <span className='fonts2 text-white'>VyaparExpo India</span>
                         </p>
                         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                             <a className="text-gray-500">
