@@ -8,7 +8,7 @@ function Hero() {
     return (
         <section className="relative mt-[88px] h-screen flex flex-col md:items-start  justify-center    text-white py-0 px-3">
             <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-                <video className="min-w-full min-h-full absolute object-cover" src="https://firebasestorage.googleapis.com/v0/b/vayparexpodatabase.appspot.com/o/My%20Video4.mp4?alt=media&token=924eeebe-b70b-45a2-9ca5-2e9e3a15d381" type="video/mp4" autoPlay  muted loop />
+                <video className="min-w-full min-h-full absolute object-cover" src="https://res.cloudinary.com/dkjgzcnzu/video/upload/v1680684013/My_Video4_ssvcoz.mp4" type="video/mp4" autoPlay  muted loop />
             </div>
 
             <div className="video-content space-y-2 mt-5 md:mt-40 md:ml-[40px]  ">

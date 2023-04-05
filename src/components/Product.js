@@ -9,7 +9,7 @@ function Product() {
                     <div className=" md:flex md:gap-3 md:justify-between md:items-center">
                         <div className="left mb-5 md:m-0">
                             <div className="lg:max-w-[100%] lg:w-full md:w-1/2 w-full">
-                                <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://firebasestorage.googleapis.com/v0/b/vayparexpodatabase.appspot.com/o/My%20Video1.mp4?alt=media&token=05f9a852-0dac-41b2-88e2-628e110c33e9" type="video/mp4" autoPlay muted loop />
+                                <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://res.cloudinary.com/dkjgzcnzu/video/upload/v1680684071/My_Video1_sxwbks.mp4" type="video/mp4" autoPlay muted loop />
                             </div>
                         </div>
                         <div className="mid mb-5 md:m-0">
@@ -23,7 +23,7 @@ function Product() {
                         </div>
                         <div className="right mb-5 md:m-0">
                             <div className="lg:max-w-[100%] lg:w-full md:w-1/2 w-full">
-                                <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://firebasestorage.googleapis.com/v0/b/vayparexpodatabase.appspot.com/o/My%20Video2.mp4?alt=media&token=1f73a292-959b-4e34-9837-9ae69abacc98" type="video/mp4" autoPlay muted loop />
+                                <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://res.cloudinary.com/dkjgzcnzu/video/upload/v1680684042/My_Video2_n9ammy.mp4" type="video/mp4" autoPlay muted loop />
                             </div>
                         </div>
                     </div>
