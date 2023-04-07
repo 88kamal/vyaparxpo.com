@@ -37,7 +37,9 @@ function Navbar() {
                         <div>
                             <div className="flex items-center justify-between py-3 md:block">
                                 <div className=' flex'>
-                                    <img className=' rounded-xl w-20 md:w-[4em] h-[4em]' src="image/logot.png" alt="" />
+                                   <Link to={'/'}>
+                                   <img className=' rounded-xl w-20 md:w-[4em] h-[4em]' src="image/logot.png" alt="" />
+                                   </Link>
 
                                     <span className=' ml-2 border-r-2'></span>
                                     <p className='fonts2 text-xs ml-3 mt-2 font-bold text-black uppercase'>

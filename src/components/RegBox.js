@@ -38,7 +38,7 @@ function RegBox() {
                        
                     </div>
                     <div className="p-2 sm:w-1/5 w-full">
-                        <a href='pdf/Expo Rates (1).pdf'>
+                        <a href='pdf/Vyapar Expo Bkup.pdf'>
                           <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8  md:p-8  md:py-[26px]  lg:p-8 justify-center rounded-xl">
 
                             <span className="title-font font-medium text-center text-lg sm:text-sm md:text-[15px] lg:text-lg  fonts2">E-BROCHURE <br />
