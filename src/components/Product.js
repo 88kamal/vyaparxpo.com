@@ -8,7 +8,7 @@ function Product() {
                 <section className="text-gray-600 body-font">
                     <div className=" md:flex md:gap-3 md:justify-between md:items-center">
                         <div className="left mb-5 md:m-0">
-                            <div className="lg:max-w-[100%] lg:w-full md:w-1/2 w-full">
+                            <div className="lg:max-w-[100%]  lg:w-full md:w-full w-full">
                                 <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://res.cloudinary.com/dkjgzcnzu/video/upload/v1680684071/My_Video1_sxwbks.mp4" type="video/mp4" autoPlay muted loop />
                             </div>
                         </div>
@@ -22,7 +22,7 @@ function Product() {
                             </p>
                         </div>
                         <div className="right mb-5 md:m-0">
-                            <div className="lg:max-w-[100%] lg:w-full md:w-1/2 w-full">
+                            <div className="lg:max-w-[100%] lg:w-full md:w-full w-full">
                                 <video className="min-w-full min-h-full rounded-xl  object-cover" src="https://res.cloudinary.com/dkjgzcnzu/video/upload/v1680684042/My_Video2_n9ammy.mp4" type="video/mp4" autoPlay muted loop />
                             </div>
                         </div>

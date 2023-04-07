@@ -12,13 +12,13 @@ function Hero() {
             </div>
 
             <div className="video-content space-y-2 mt-5 md:mt-40 md:ml-[40px]  ">
-                <div className="bg-gray-300 w-[231px] md:w-[433px] ">
-                    <h1 className="md:text-6xl text-[32px] font-bold  fonts2  bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}>1ST NATIONAL</h1>
+                <div className="bg-gray-400 w-[231px] md:w-[433px] ">
+                    <h1 className="md:text-6xl text-white text-[32px] font-bold  fonts2  bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}>1ST NATIONAL</h1>
                 </div>
-                <div className="bg-gray-300 w-[363px] md:w-[681px]">
+                <div className="bg-gray-400 w-[363px] md:w-[681px]">
                     <h1 className="md:text-6xl text-[32px] font-bold mb-5 fonts2 bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}> FOOD & AGRICULTURE </h1>
                 </div>
-                <div className="bg-gray-300 w-[306px] md:w-[574px]">
+                <div className="bg-gray-400 w-[306px] md:w-[574px]">
                     <h1 className="md:text-6xl text-[32px] font-bold mb-5 fonts2 bgh1" style={{ transform: 'translate(0px, 0%) opacity: 1' }}>VYAPAR EXPO 2023</h1>
                 </div>
 

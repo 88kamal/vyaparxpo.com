@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 function RegBox() {
     return (
         <section className="text-gray-600 body-font">
@@ -9,8 +10,8 @@ function RegBox() {
                 <div className="flex flex-wrap ">
                     <div className="p-2 sm:w-1/5 w-full">
                         <Link to={'/exhibitorregistration'}>
-                            <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8   justify-center rounded-xl ">
-                                <span className="title-font font-medium text-center text-lg  fonts2">REGISTRATION <br />
+                            <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8  md:p-8  lg:p-8   justify-center rounded-xl ">
+                                <span className="title-font font-medium text-center text-lg sm:text-xs md:text-[15px]  lg:text-lg  fonts2">REGISTRATION <br />
                                     FOR EXHIBITOR</span>
                             </div>
                         </Link>
@@ -18,9 +19,9 @@ function RegBox() {
                     </div>
                     <div className="p-2 sm:w-1/5 w-full">
                         <Link to={'/visitorregistration'}>
-                            <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8  justify-center rounded-xl">
+                            <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8  md:p-8  md:py-[36px] lg:p-8 justify-center rounded-xl">
 
-                                <span className="title-font font-medium text-center text-lg  fonts2">REGISTRATION <br />
+                                <span className="title-font font-medium text-center text-lg sm:text-sm md:text-[15px] lg:text-lg fonts2">REGISTRATION <br />
                                     FOR VISITOR</span>
                             </div>
                         </Link>
@@ -28,19 +29,19 @@ function RegBox() {
                     </div>
                     <div className="p-2 sm:w-1/5 w-full">
                         <Link to={'/registrationforsponsorship'}>
-                             <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8  justify-center rounded-xl">
+                             <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8  md:p-8  md:py-[26px] lg:p-8 justify-center rounded-xl">
 
-                            <span className="title-font font-medium text-center text-lg fonts2">REGISTRATION <br />
+                            <span className="title-font font-medium text-center text-lg sm:text-sm md:text-[15px] lg:text-lg fonts2">REGISTRATION <br />
                                 FOR SPONSORSHIP</span>
                         </div>
                         </Link>
                        
                     </div>
                     <div className="p-2 sm:w-1/5 w-full">
-                        <a href='pdf/Vyapar Expo Bkup.pdf'>
-                          <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8  justify-center rounded-xl">
+                        <a href='pdf/Expo Rates (1).pdf'>
+                          <div className="bg-gradient-to-br  hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-8  md:p-8  md:py-[26px]  lg:p-8 justify-center rounded-xl">
 
-                            <span className="title-font font-medium text-center text-lg  fonts2">E-BROCHURE <br />
+                            <span className="title-font font-medium text-center text-lg sm:text-sm md:text-[15px] lg:text-lg  fonts2">E-BROCHURE <br />
                                 DOWNLOAD</span>
                         </div>   
                         </a>
@@ -49,9 +50,9 @@ function RegBox() {
                     </div>
                     <div className="p-2 sm:w-1/5 w-full">
                         <Link to={'/floorplan'}>
-                             <div className="bg-gradient-to-br hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-[45.5px]  justify-center rounded-xl">
+                             <div className="bg-gradient-to-br hover:shadow-xl hover:shadow-rose-300 bg-[#ff0000] text-white  flex p-[45.5px]  md:p-8  md:py-[35px]  lg:p-8  justify-center rounded-xl">
 
-                            <span className="title-font font-medium text-center text-lg  fonts2"> FLOOR PLAN</span>
+                            <span className="title-font font-medium text-center text-lg sm:text-sm md:text-[15px] lg:text-lg  fonts2"> FLOOR PLAN</span>
                         </div>
                         </Link>
                        

@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <div>
-            <footer className=" bg-red-300">
+            <footer className=" bg-red-500">
                 <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                        <img className=' rounded-xl w-20 md:w-28' src="image/logot.png" alt="" />
+                            <img className=' rounded-xl w-20 md:w-28' src="image/logot.png" alt="" />
 
                         </a>
                         <p className="mt-2 text-sm text-gray-900">Air plant banjo lyft occupy retro adaptogen indego</p>
@@ -19,76 +19,87 @@ function Footer() {
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                             {/* <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2> */}
                             <nav className="list-none mb-10">
-                                <li>
+                                <li className=' my-5'>
                                     <Link to={'/'} className="text-gray-900 hover:text-green-500 cursor-pointer">Home</Link>
                                 </li>
-                                <li>
+                                <li className=' my-5'>
                                     <Link to={'/aboutvayparexpo'} className="text-gray-900 hover:text-green-500 cursor-pointer">About</Link>
                                 </li>
-                                <li>
+                                <li className=' my-5'>
                                     <Link to={'/whytoExhibit'} className="text-gray-900 hover:text-green-500 cursor-pointer">Exhibitor</Link>
                                 </li>
-                                <li>
+                                <li className=' my-5'>
                                     <Link to={'/whyvisit'} className="text-gray-900 hover:text-green-500 cursor-pointer">Visitor</Link>
                                 </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Book your Stand</a>
+                                <li className=' my-5'>
+                                    <Link to={'/aboutvayparexpo'} className="text-gray-900 hover:text-green-500 cursor-pointer">
+                                        About Vypar Expo
+                                    </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a className="text-gray-900 hover:text-green-500 cursor-pointer">Get Your Pass</a>
-                                </li>
+                                </li> */}
                             </nav>
                         </div>
-                      
+
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                             <nav className="list-none mb-10">
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Home</a>
+                                <li className=' my-5'>
+                                    <Link to={'/visitorregistration'} className="text-gray-900 hover:text-green-500 cursor-pointer">Interested To Participate</Link>
                                 </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">About</a>
+                                <li className=' my-5'>
+                                    <Link to={'/profilevisitor'} className="text-gray-900 hover:text-green-500 cursor-pointer">Visitor Profile</Link>
                                 </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Exhibitor</a>
+                                <li className=' my-5'>
+                                    <Link to={'/visitorregistration'} className="text-gray-900 hover:text-green-500 cursor-pointer">
+                                        Visitor Registration
+                                    </Link>
                                 </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Visitor</a>
+                                <li className=' my-5'>
+                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">
+                                        Marketing Campaign
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a className="text-gray-900 hover:text-green-500 cursor-pointer">Book your Stand</a>
                                 </li>
                                 <li>
                                     <a className="text-gray-900 hover:text-green-500 cursor-pointer">Get Your Pass</a>
-                                </li>
+                                </li> */}
                             </nav>
                         </div>
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <nav className="list-none mb-10">
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Home</a>
+                            <nav className="list-none mb-10">
+                                <li className=' my-5'>
+                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">
+                                        Catalogue
+                                    </a>
                                 </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">About</a>
+                                <li className=' my-5'>
+                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">
+                                        FloorPlan
+                                    </a>
                                 </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Exhibitor</a>
+                                <li className=' my-5'>
+                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">
+                                        Contract From
+                                    </a>
                                 </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Visitor</a>
+                                <li className=' my-5'>
+                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">
+                                        Contact Us
+                                    </a>
                                 </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Book your Stand</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-900 hover:text-green-500 cursor-pointer">Get Your Pass</a>
-                                </li>
+
                             </nav>
                         </div>
+                       
                     </div>
+                    
                 </div>
                 <div className="bg-red-800">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p className="text-white text-sm text-center sm:text-left ">© 2023 <span className='fonts2 text-white'>VyaparExpo India</span>
+                        <p className="text-white text-sm text-center sm:text-left ">Copyright © 2023 <span className='fonts2 text-white'>VyaparExpo India, All right reserved.</span>
                         </p>
                         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                             <a className="text-gray-500">

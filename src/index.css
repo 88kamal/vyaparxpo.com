@@ -50,7 +50,8 @@ code {
   margin: 0 auto;
   font-family: Montserrat, sans-serif;
   /* font-size: 300px; */
-  background-image: url("https://images.unsplash.com/photo-1512531123205-560f5974e686?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1512531123205-560f5974e686?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80"); */
+  background-color: rgb(255, 255, 255);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;

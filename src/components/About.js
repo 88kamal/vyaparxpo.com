@@ -20,8 +20,8 @@ function About() {
                                 together to Millions of Food manufacturer, Food entrepreneurs, Farmers and Agriculturists. We are organizing <b> <span  className=' text-[#ff0000] '>1ST Food & Agriculture Vyapar Expo 2023 mega event on 16THto 20TH OCTOBER , 2023 AT AGRICULTURE GROUND BHU CAMPUS VARANASI,</span></b> The City of Lord Shiva, with prospering Culture and commerce to connect endless possibilities for business in all category of Food & Agriculture Economy.
                             </p>
                             <div className="flex mb-5">
-                            <Link to={'/exhibitorregistration'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">EXHIBITOR REGISTRATION</button></Link>
-                            <Link to={'/visitorregistration'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 fonts2 ">FREE VISITOR REGISTRATION</button></Link>
+                            <Link to={'/exhibitorregistration'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm sm:text-sm md:text-[10px] lg:text-sm px-2 py-1.5 sm:px-5 sm:py-2.5 md:px-2 md:py-2 lg:px-5 lg:py2.5 text-center mr-2 fonts2 ">EXHIBITOR REGISTRATION</button></Link>
+                            <Link to={'/visitorregistration'} ><button type="button" class="text-white bg-[#ff0000] hover:bg-purple-800font-medium rounded-full text-sm sm:text-sm md:text-[10px] lg:text-sm px-2 py-1.5 sm:px-5 sm:py-2.5 md:px-2 md:py-2 lg:px-5 lg:py2.5 text-center mr-2 fonts2 ">FREE VISITOR REGISTRATION</button></Link>
                             </div>
                         </div>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full">

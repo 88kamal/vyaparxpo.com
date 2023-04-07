@@ -100,7 +100,7 @@ function ExhibitorRegistration() {
                                     <img className='w-28 ' src="image/logot.png" alt="" />
                                 </div> */}
                                 <h1 className=' text-center text-2xl underline fonts1 font-bold'>
-                                    Exihibitors Registration</h1>
+                                    Exhibitor Registration</h1>
                             </div>
                         </div>
                         <div className="right">

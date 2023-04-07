@@ -20,8 +20,7 @@ function Stallinformation() {
                 <h3 className=' text-xl font-bold text-center mb-3 fonts2'>1ST NATIONAL
                     FOOD & <span className='text-[#ff0000]'>AGRICULTURE VYAPAR EXPO 2023
                         <br />
-                        10TH -15TH JULY,2023
-                        IIT –BHU CAMPUS </span>
+                        16-17-18-19-20 OCTOBER, 2023 <br /> AGRICULTURE GROUND (BHU CAMPUS), <br /> VARANASI Uttarpardesh </span>
                 </h3>
             </div>
 
@@ -35,8 +34,9 @@ function Stallinformation() {
 
                         </h1>
                         <p className=" fonts text-lg "> <u>Rs.6500/-Per Sqm + GST 18% </u> <br />
+                        OTHER UTILITIES <br />
                             <b> <u>BOOTH ACCESSORIES:</u></b> One Table, <br /> Two Chairs, 3 Spot Light, Dust Bin, <br /> Fascia, Carpet, Electric Point , Brochure stand , <br /> Entry on catalogue  listing & entry pass <br />
-                            OTHER UTILITIES
+                           
                         </p>
 
                     </div>

@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 import { FaUserFriends, FaUserAlt, FaUserCheck } from 'react-icons/fa'
 import { TbBrandVimeo } from 'react-icons/tb'
 import {GiFloorHatch} from 'react-icons/gi'
-
+import {GiFarmer} from 'react-icons/gi'
 function Icons() {
     return (
         <section className="text-gray-600 body-font mt-[1.4em]">
@@ -34,7 +34,7 @@ function Icons() {
                         <div className="bg-[#d1e8ff] text-black  flex p-2  justify-center rounded-xl">
                             <div className=' text-center'>
                                 <div className=' flex justify-center'><TbBrandVimeo size={30} /></div>
-                                <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={2500} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
+                                <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={50000} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
                                 <span className=' text-lg font-bold fonts1 uppercase'>Visitor</span>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ function Icons() {
                     <div className="p-2 md:w-1/5 w-full">
                         <div className="bg-[#d1e8ff] text-black  flex p-2  justify-center rounded-xl">
                             <div className=' text-center'>
-                                <div className=' flex justify-center'><TbBrandVimeo size={30} /></div>
+                                <div className=' flex justify-center'><GiFarmer size={30} /></div>
                                 <CountUp className=' text-2xl font-bold fonts1 text-[#ff0000]' end={1000} /><span className='text-2xl  fonts1 text-[#ff0000]'>+</span> <br />
                                 <span className=' text-lg font-bold uppercase fonts1'>Farmers</span>
                             </div>

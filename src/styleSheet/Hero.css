@@ -10,7 +10,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(7, 7, 7, 0.624);
+    /* color: white; */
+    background: rgba(0, 0, 0, 0.395);
     z-index: 1;
   }
   
