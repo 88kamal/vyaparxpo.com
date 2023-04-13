@@ -37,13 +37,22 @@ function Navbar() {
                         <div>
                             <div className="flex items-center justify-between py-3 md:block">
                                 <div className=' flex'>
-                                   <Link to={'/'}>
-                                   <img className=' rounded-xl w-20 md:w-[4em] h-[4em]' src="image/logot.png" alt="" />
-                                   </Link>
+                                    <Link to={'/'}>
+                                        <img className=' rounded-xl w-20 md:w-[4em] h-[4em]' src="image/logot.png" alt="" />
+                                    </Link>
 
-                                    <span className=' ml-2 border-r-2'></span>
+                                    <span className=' ml-2 border-r-2 border-gray-300'></span>
                                     <p className='fonts2 text-xs ml-3 mt-2 font-bold text-black uppercase'>
                                         16-17-18-19-20 OCTOBER, 2023 <br /> AGRICULTURE GROUND (BHU CAMPUS), <br /> VARANASI Uttarpardesh</p>
+                                        <span className=' ml-2 border-r-2 border-gray-300'></span>
+                                        <img className=' image2  w-20 ml-3' src="footer/dsft.png" alt="" />
+                                        <div className=" flex image1 ">
+                                        <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/dsft.png" alt="" />
+                                        <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/ms.png" alt="" />
+                                        <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/g20.jpeg" alt="" />
+                                        <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/m.png" alt="" />
+                                        <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/a.png" alt="" />
+                                        </div>
                                 </div>
 
 
@@ -96,8 +105,8 @@ function Navbar() {
                                 className={`flex-1 justify-self-center pb-3 mt-1 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                                     }`}
                             >
-                                <ul className="items-center bg-black md:bg-transparent justify-center space-y-4 md:flex md:space-x-3 md:space-y-0 p-5 md:p-0">
-                                    <li className="text-white md:text-gray-900 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase md:border border-black md:px-5 md:rounded-full hover:border-[#ff0000]">
+                                <ul className="items-center bg-black md:bg-transparent justify-center space-y-4 md:flex md:space-x-2 md:space-y-0 p-5 md:p-0">
+                                    <li className="text-white md:text-gray-900 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase  md:px-5 md:rounded-full hover:border-[#ff0000]">
                                         <a className=' flex' href='/' > Home</a>
                                     </li>
                                     <li className="text-white md:text-gray-900 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase "><div className="dropdown inline-block  ">
@@ -168,9 +177,25 @@ function Navbar() {
                                     <li className="text-white md:text-gray-900 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase   md:rounded-full">
                                         <Link className=' flex' to={'/visitor'} > VISITOR PASS</Link>
                                     </li>
-                                    <li className="text-white md:text-gray-900 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase   md:rounded-full">
-                                        <Link className=' flex' to={'/studentregistration'} >DSFT-BHU</Link>
+                                    <li className="text-white md:text-gray-900 font-semibold md:text-[11px]  ">
+
+                                        <div className="dropdown inline-block  ">
+                                            <button className=" text-white md:text-gray-900 hover:text-[#ff0000] font-semibold md:py-2  rounded inline-flex items-center">
+                                                <span className="mr-1 md:hover:border-b-2 py-[1px] border-[#ff0000] ">DSFT</span>
+
+                                            </button>
+                                            <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
+                                                <li className><Link className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" to={'/studentregistration'}>DSFT-BHU</Link></li>
+                                                <hr />
+                                                <li className><Link to={'/profilevisitor'} className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">FOR STUDENT REGEISTARTION</Link></li>
+                                                <hr />
+                                                <li className><Link to={'/visitorregistration'} className="bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Registration</Link></li>
+                                            </ul>
+                                        </div>
                                     </li>
+                                    {/* <li className="text-white md:text-gray-900 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase   md:rounded-full">
+                                        <Link className=' flex' to={'/studentregistration'} >DSFT-BHU</Link>
+                                    </li> */}
                                     <li className="text-white md:text-gray-900 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase   md:rounded-full">
                                         <Link className=' flex' to={'/gallery'} >Gallery</Link>
                                     </li>

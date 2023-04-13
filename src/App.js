@@ -41,6 +41,7 @@ import Contact from './pages/Contact';
 import AboutVyaparXpo from './pages/About/AboutVyaparXpo';
 import HotelAccomodation from './pages/HotelAccomodation';
 import Gallery from './pages/Gallery';
+import Visitorpass from './pages/Visitor/Visitorpass';
 
 function App() {
 
@@ -134,6 +135,30 @@ function App() {
   
   //     return () => data;
   //   }, []);
+
+  // const [visitor, setvisitor] = useState([]);
+  // console.log(visitor)
+  // useEffect(() => {
+  //   const q = query(
+  //     collection(db, "visitorRegistration"),
+  //     orderBy("createdAt"),
+  //     // limit(50)
+  //   );
+  //   const data = onSnapshot(q, (QuerySnapshot) => {
+  //     let visitor = [];
+  //     QuerySnapshot.forEach((doc) => {
+  //       visitor.push({ ...doc.data(), id: doc.id });
+  //     });
+  //     setvisitor(visitor)
+
+  //   });
+  //   console.log(visitor)
+
+  //   return () => data;
+  // }, []);
+  const [name, setName] = useState('');
+
+
   return (
     
       <Router>
@@ -149,7 +174,7 @@ function App() {
         <Route exact path="/stallinformation" element={<Stallinformation />} />
         <Route exact path="/profilevisitor" element={<ProfileVisitor />} />
         <Route exact path="/exhibitorregistration" element={<ExhibitorRegistration />} />
-        <Route exact path="/visitorregistration" element={<VisitorRegistration />} />
+        <Route exact path="/visitorregistration" element={<VisitorRegistration name={name} setName={setName} />} />
         <Route exact path="/studentregistration" element={<BhuStudentRegistration />} />
         <Route exact path="/visitor" element={<Visitor />} />
         <Route exact path="/registrationforsponsorship" element={<Registrationforsponsorship />} />
@@ -166,6 +191,8 @@ function App() {
 
         {/* // stall  */}
         <Route exact path="/allstall" element={<AllStall />} />
+        <Route exact path="/visitorpass" element={<Visitorpass name={name} />} />
+
         {/* <Route exact path="/sixsq" element={<SixSq />} />
         <Route exact path="/invoice" element={<Invoice />} />
         <Route exact path="/invoicenine" element={<InvoiceNine />} />

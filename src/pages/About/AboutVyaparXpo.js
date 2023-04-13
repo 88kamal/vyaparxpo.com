@@ -19,8 +19,10 @@ export default function AboutVyaparXpo() {
                     <h1 className=' uppercase text-lg font-semibold fonts2'>Vaypar Expo 2023</h1>
                   </div>
                   <div className="logo_right">
-                    <h1 className=''>
+                    <h1 className=' flex'>
                       <img className=' w-56' src="gallery/logo.png" alt="" />
+                      <img className=' w-10 md:w-16 lg:w-16 ml-3' src="footer/dsft.png" alt="" />
+
                     </h1>
                   </div>
                 </div>

@@ -4,9 +4,10 @@ import { db } from '../../firebase/FireBaseConfig'
 import { collection, addDoc } from 'firebase/firestore'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router';
 
-function VisitorRegistration() {
-    const [name, setName] = useState('');
+function VisitorRegistration({name,setName}) {
+    // const [name, setName] = useState('');
     const [companyName, setCompanyName] = useState('');
     const [email, setEmail] = useState('');
     const [designation, setDesignation] = useState('');
@@ -18,6 +19,7 @@ function VisitorRegistration() {
     const [selectedCategory, setSelectedCategory] = useState([]);
     const [city, setCity] = useState('');
     const [selectedAbout, setSetSelectedAbout] = useState([]);
+    const navigate = useNavigate()
 
     function handleSelectChangeOne(event) {
         setSelectedState(event.target.value);
@@ -73,22 +75,27 @@ function VisitorRegistration() {
             });
         } catch (error) {
             console.log(error)
-        }
-        // after filling all the fields then fill empty
-        setName('');
-        setCompanyName('');
-        setEmail('');
-        setDesignation('');
-        setPhone('');
-        setWebsite('');
-        setCountry('');
-        setProducts('');
-        setSelectedState('');
-        setCity('');
-        setSelectedCategory('');
-        setSetSelectedAbout('')
+        }  
+        navigate('/visitorpass')
+                //   window.location.href= "visitorpass"
+                // nav
 
+        // after filling all the fields then fill empty
+        // setName('');
+        // setCompanyName('');
+        // setEmail('');
+        // setDesignation('');
+        // setPhone('');
+        // setWebsite('');
+        // setCountry('');
+        // setProducts('');
+        // setSelectedState('');
+        // setCity('');
+        // setSelectedCategory('');
+        // setSetSelectedAbout('')
     }
+
+    
 
     return (
         <Layout>

@@ -269,6 +269,7 @@ function Exhibitor() {
 
 function Visitor() {
   const [visitor, setvisitor] = useState([]);
+  console.log(visitor)
   useEffect(() => {
     const q = query(
       collection(db, "visitorRegistration"),
@@ -338,6 +339,9 @@ function Visitor() {
                       <th scope="col" className="border-r px-6 py-4 border-gray-500">
                         Selected About
                       </th>
+                      <th scope="col" className="border-r px-6 py-4 border-gray-500">
+                        Id
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -383,6 +387,9 @@ function Visitor() {
                           </td>
                           <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
                             {selectedAbout}
+                          </td>
+                          <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
+                            {id}
                           </td>
 
                         </tr>

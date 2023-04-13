@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
+import Header from './Header'
 
 function Layout(props) {
   useEffect(() => {
@@ -8,6 +9,7 @@ function Layout(props) {
   }, [])
   return (
     <div>
+      {/* <Header/> */}
       <Navbar/>
       <div>
         {props.children}

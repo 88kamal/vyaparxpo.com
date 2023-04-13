@@ -19,6 +19,7 @@ import Team from '../components/Team'
 import Try from '../components/Try'
 import WhyVaranasi from '../components/WhyVaranasi'
 import ScrollBtn from '../ScrollBtn/ScrollBtn'
+import BhuTeam from '../components/BhuTeam'
 
 function Home() {
     return (
@@ -34,6 +35,7 @@ function Home() {
             {/* <Highlights/> */}
             {/* <Statistics/> */}
             <Exhibitor/>
+            <BhuTeam/>
             <Team/>
             <ScrollBtn/>
             <Map/>
