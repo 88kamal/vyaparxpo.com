@@ -7,7 +7,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import AllStallDetails from './components/AllStallDetails';
 // import "react-tabs/style/react-tabs.css";
 
-function AdminPanel({ logout,allStallDetail }) {
+function AdminPanel({ logout, allStallDetail }) {
   const [exhibitor, setexhibitor] = useState([]);
   useEffect(() => {
     const q = query(
@@ -340,7 +340,7 @@ function Visitor() {
                         Selected About
                       </th>
                       <th scope="col" className="border-r px-6 py-4 border-gray-500">
-                       Unique_Id
+                        Unique_Id
                       </th>
                     </tr>
                   </thead>
@@ -409,9 +409,100 @@ function Visitor() {
 }
 
 function BHUStudent() {
+  const [student, setStudent] = useState([]);
+  // console.log(visitor)
+  useEffect(() => {
+    const q = query(
+      collection(db, "studentregistration"),
+      orderBy("createdAt"),
+      // limit(50)
+    );
+    const data = onSnapshot(q, (QuerySnapshot) => {
+      let student = [];
+      QuerySnapshot.forEach((doc) => {
+        student.push({ ...doc.data(), id: doc.id });
+      });
+      setStudent(student)
+
+    });
+    console.log(student)
+
+    return () => data;
+  }, []);
   return (
     <div>
-      <h1 className='text-center text-white text-lg'>No Data</h1>
+        <div className="exhibitor container mx-auto px-4">
+        <h1 className='   text-2xl text-pink-500 fonts2 underline '>All Visitor</h1>
+        <div className="flex flex-col">
+          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full border  text-sm font-light text-white border-gray-500">
+                  <thead className="border-b font-medium border-gray-500 " style={{ backgroundColor: 'rgb(40, 44, 52)' }}>
+                    <tr>
+                      <th scope="col" className="border-r px-6 py-4 border-gray-500">
+                        S.No.
+                      </th>
+                      <th scope="col" className="border-r px-6 py-4 border-gray-500">
+                      STUDENT  NAME 
+                      </th>
+                      <th scope="col" className="border-r px-6 py-4 border-gray-500">
+                      COLLEGE NAME
+                      </th>
+                      <th scope="col" className="border-r px-6 py-4 border-gray-500">
+                      DEPARTMENT
+                      </th>
+                      <th scope="col" className="border-r px-6 py-4 border-gray-500">
+                      COURSE NAME
+                      </th>
+                      <th scope="col" className="border-r px-6 py-4 border-gray-500">
+                      MOBILE NO
+                      </th>
+                      <th scope="col" className="border-r px-6 py-4 border-gray-500">
+                      PRODUCT TO PRESENTED
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {student.map((item, index) => {
+                      const {sname, college,department,cname,mobile,selectedProduct
+                      } = item;
+                      return (
+                        <tr className="border-b border-gray-500">
+                          <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
+                            {index + 1}
+                          </td>
+                          <td className="whitespace-nowrap border-r px-6 py-4 border-gray-500">
+                            {sname}
+                          </td>
+                          <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
+                            {college}
+                          </td>
+                          <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
+                            {department}
+                          </td>
+                          <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
+                            {cname}
+                          </td>
+                          <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
+                            {mobile}
+                          </td>
+                          <td className="whitespace-nowrap border-r px-6 py-4 font-medium border-gray-500">
+                            {selectedProduct}
+                          </td>
+                         
+
+                        </tr>
+
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

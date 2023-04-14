@@ -43,6 +43,7 @@ import HotelAccomodation from './pages/HotelAccomodation';
 import Gallery from './pages/Gallery';
 import Visitorpass from './pages/Visitor/Visitorpass';
 import { v4 as uuid } from 'uuid';
+import StudentRegistration from './pages/RegistrationForm/StudentRegistration';
 
 function App() {
 
@@ -162,6 +163,7 @@ function App() {
   const [country, setCountry] = useState('');
   const [city, setCity] = useState('');
   const unique_id = uuid();
+  const [phone, setPhone] = useState('');
 
 
   return (
@@ -179,8 +181,8 @@ function App() {
         <Route exact path="/stallinformation" element={<Stallinformation />} />
         <Route exact path="/profilevisitor" element={<ProfileVisitor />} />
         <Route exact path="/exhibitorregistration" element={<ExhibitorRegistration />} />
-        <Route exact path="/visitorregistration" element={<VisitorRegistration name={name}  unique_id ={ unique_id } setName={setName} email={email} setEmail={setEmail} country={country} setCountry={setCountry} city={city} setCity={setCity}      />} />
-        <Route exact path="/studentregistration" element={<BhuStudentRegistration />} />
+        <Route exact path="/visitorregistration" element={<VisitorRegistration name={name}  unique_id ={ unique_id } setName={setName} email={email} setEmail={setEmail} country={country} setCountry={setCountry} city={city} setCity={setCity}  phone={phone} setPhone={setPhone}    />} />
+        <Route exact path="/dsft" element={<BhuStudentRegistration />} />
         <Route exact path="/visitor" element={<Visitor />} />
         <Route exact path="/registrationforsponsorship" element={<Registrationforsponsorship />} />
         <Route exact path="/floorplan" element={<FloorPlan />} />
@@ -196,7 +198,9 @@ function App() {
 
         {/* // stall  */}
         <Route exact path="/allstall" element={<AllStall />} />
-        <Route exact path="/visitorpass" element={<Visitorpass name={name}  unique_id ={ unique_id }  email={email} setEmail={setEmail} country={country} setCountry={setCountry} city={city} setCity={setCity}  />} />
+        <Route exact path="/visitorpass" element={<Visitorpass name={name}  unique_id ={ unique_id }  email={email} setEmail={setEmail} country={country} setCountry={setCountry} city={city} setCity={setCity} phone={phone} setPhone={setPhone}  />} />
+        <Route exact path="/studentregistration" element={<StudentRegistration />} />
+
 
         {/* <Route exact path="/sixsq" element={<SixSq />} />
         <Route exact path="/invoice" element={<Invoice />} />

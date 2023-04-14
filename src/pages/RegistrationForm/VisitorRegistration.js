@@ -6,11 +6,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router';
 
-function VisitorRegistration({name,setName, unique_id,  email, setEmail, country, setCountry, city, setCity  }) {
+function VisitorRegistration({name,setName, unique_id,  email, setEmail, country, setCountry, city, setCity, phone, setPhone  }) {
     // const [name, setName] = useState('');
     const [companyName, setCompanyName] = useState('');
     const [designation, setDesignation] = useState('');
-    const [phone, setPhone] = useState('');
+    // const [phone, setPhone] = useState('');
     const [website, setWebsite] = useState('');
     const [products, setProducts] = useState('');
     const [selectedState, setSelectedState] = useState([]);

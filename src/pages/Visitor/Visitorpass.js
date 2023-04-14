@@ -1,44 +1,37 @@
 import React from 'react'
 
-function Visitorpass({ name, unique_id, email, country, city }) {
+function Visitorpass({ name, unique_id, email, country, city, phone, setPhone }) {
     const downloadpdf = () => {
         window.print()
         window.location.href = "/"
     }
     return (
         <div>
-            <div className=" container mx-auto py-4 md:py-10 px-4">
-                <div className="bg-green-200 p-10 mb-2 ">
-                    <h1 className=' text-center mb-5 text-xl'>Organised By</h1>
-                    <div className=" flex justify-center mb-5">
-                        <img className='w-32 ' src="footer/dsft.png" alt="" />
+            <section className="text-gray-600 body-font">
+                <div className="container mx-auto flex flex-col px-5 py-2 justify-center items-center">
+                    <img className="lg:w-2/4 md:w-3/6 w-5/6 mb-5 object-cover object-center rounded" alt="hero" src="pass/Pasted Graphic.png" />
+                    <div className="w-full md:w-2/3 flex flex-col mb-16 ">
+                        <div className="reg  ml-[30px] md:ml-[102px] lg:ml-[102px] mb-5">
+                            <h2 className=' text-black'><span className=' font-bold'>Unique Id:</span> {unique_id}</h2>
+                            <h2 className=' text-black'><span className=' font-bold'>Name:</span> {name}</h2>
+                            <h2 className=' text-black'><span className=' font-bold'>Number:</span> {phone}</h2>
+                            <h2 className=' text-black'><span className=' font-bold'>Email Id: </span>{email}</h2>
+                            <h2 className=' text-black'><span className=' font-bold'>City: </span>{city}</h2>
+                        </div>
+                        <div className="ml-[30px] md:ml-[102px] lg:ml-[102px] mb-5">
+                            <p className=' text-2xl font-bold mb-2 underline text-black'>Media Partner</p>
+                            <div className="flex space-x-4">
+                                <img src="footer/in.png" alt="" />
+                                <img src="footer/ud.png" alt="" />
+                                <img src="footer/b.png" alt="" />
+                            </div>
+                        </div>
+                        <div className="download ml-[30px] md:ml-[102px] lg:ml-[102px]">
+                            <button onClick={downloadpdf} className=' underline text-blue-500'>Download</button>
+                        </div>
                     </div>
-                    <div className=" flex justify-center items-center gap-4">
-                        <img className='w-32 ' src="footer/logo.png" alt="" />
-                        <h1 className=' text-5xl fonts2 font-bold'>Vypar India</h1>
-
-                    </div>
-                    <hr className=' my-5 font-bold text-black' />
-                    <p className=' text-2xl font-semibold fonts1'>16-17-18-19-20 OCTOBER, 2023
-                        AGRICULTURE GROUND (BHU CAMPUS),
-                        VARANASI UTTARPARDESH</p>
                 </div>
-                <div className=" container mx-auto px-4 mb-2">
-                    <h1 className=' text-2xl text-center underline mb-2'>Online Pre-Registration</h1>
-                    <h2 className=' text-2xl'>Id : {unique_id}</h2>
-                    <h2 className=' text-2xl'>Name: {name}</h2>
-                    <h2 className=' text-2xl'>Email: {email}</h2>
-                    <h2 className=' text-2xl'>Country: {country}</h2>
-                    <h2 className=' text-2xl'>City: {city}</h2>
-                </div>
-                <div className="visitor bg-yellow-400 p-5 mb-2">
-                    <h2 className=' text-center text-4xl md:text-9xl font-bold'>Visitor</h2>
-                </div>
-
-                <div className="download">
-                    <button onClick={downloadpdf} className=' underline text-blue-500'>Download</button>
-                </div>
-            </div>
+            </section>
         </div>
     )
 }

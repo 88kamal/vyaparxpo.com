@@ -38,14 +38,14 @@ function Navbar() {
                             <div className="flex items-center justify-between py-3 md:block">
                                 <div className=' flex'>
                                     <Link to={'/'}>
-                                        <img className=' rounded-xl w-20 md:w-[4.4em] h-[4.4em]' src="image/logot.png" alt="" />
+                                        <img className=' rounded-xl w-28 md:w-[4.4em] md:h-[4.4em]' src="image/logot.png" alt="" />
                                     </Link>
 
                                     <span className=' ml-2 border-r-2 border-gray-300'></span>
                                     <p className='fonts2 text-xs ml-3 mt-2 font-bold text-black uppercase'>
                                         16-17-18-19-20 OCTOBER, 2023 <br /> AGRICULTURE GROUND (BHU CAMPUS), <br /> VARANASI Uttarpardesh</p>
                                         <span className=' ml-2 border-r-2 border-gray-300'></span>
-                                        <img className=' image2  w-20 ml-3' src="footer/dsft.png" alt="" />
+                                        <img className=' image2  w-16 ml-3' src="footer/dsft.png" alt="" />
                                         <div className=" flex image1 ">
                                         <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/dsft.png" alt="" />
                                         <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/ms.png" alt="" />
@@ -145,7 +145,7 @@ function Navbar() {
                                                 <hr />
                                                 <li className><Link to={'/exhibitorregistration'} className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-red-yellow 3ov text-white er:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" >Registration Exibitor</Link></li>
                                                 <hr />
-                                                <li className><a className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">ABOUT STALL</a></li>
+                                                {/* <li className><a className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">ABOUT STALL</a></li> */}
 
                                                 <hr />
                                                 <li className><a className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white  border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">HOTEL & TRAVEL</a></li>
@@ -185,9 +185,9 @@ function Navbar() {
 
                                             </button>
                                             <ul className="dropdown-menu absolute hidden text-gray-700 md:pt-5 border-b-2 border-red-600 ">
-                                                <li className><Link className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" to={'/studentregistration'}>DSFT-BHU</Link></li>
+                                                <li className><Link t  className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" to={'/dsft'}>DSFT-BHU</Link></li>
                                                 <hr />
-                                                <li className><Link to={'/profilevisitor'} className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">FOR STUDENT REGEISTARTION</Link></li>
+                                                <li className><Link to={'/studentregistration'} className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase">FOR STUDENT REGEISTARTION</Link></li>
                                                 <hr />
                                                 {/* <li className><Link to={'/visitorregistration'} className="bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Registration</Link></li> */}
                                             </ul>
