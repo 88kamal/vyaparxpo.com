@@ -6,18 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router';
 
-function VisitorRegistration({name,setName}) {
+function VisitorRegistration({name,setName, unique_id,  email, setEmail, country, setCountry, city, setCity  }) {
     // const [name, setName] = useState('');
     const [companyName, setCompanyName] = useState('');
-    const [email, setEmail] = useState('');
     const [designation, setDesignation] = useState('');
     const [phone, setPhone] = useState('');
     const [website, setWebsite] = useState('');
-    const [country, setCountry] = useState('');
     const [products, setProducts] = useState('');
     const [selectedState, setSelectedState] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState([]);
-    const [city, setCity] = useState('');
     const [selectedAbout, setSetSelectedAbout] = useState([]);
     const navigate = useNavigate()
 
@@ -61,6 +58,7 @@ function VisitorRegistration({name,setName}) {
                 city: city,
                 selectedCategory: selectedCategory,
                 selectedAbout: selectedAbout,
+                unique_id : unique_id ,
                 createdAt: new Date().toLocaleString(),
             })
             toast.success('Visitor Registration Success', {

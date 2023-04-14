@@ -1,10 +1,9 @@
 import React from 'react'
 
-function Visitorpass({ name }) {
-
-    const downloadpdf = () =>{
+function Visitorpass({ name, unique_id, email, country, city }) {
+    const downloadpdf = () => {
         window.print()
-        window.location.href= "/"
+        window.location.href = "/"
     }
     return (
         <div>
@@ -26,10 +25,11 @@ function Visitorpass({ name }) {
                 </div>
                 <div className=" container mx-auto px-4 mb-2">
                     <h1 className=' text-2xl text-center underline mb-2'>Online Pre-Registration</h1>
-
-                    <h2 className=' text-2xl'>{name}</h2>
-                    <h2 className=' text-2xl'>Id : 09818227277272</h2>
-
+                    <h2 className=' text-2xl'>Id : {unique_id}</h2>
+                    <h2 className=' text-2xl'>Name: {name}</h2>
+                    <h2 className=' text-2xl'>Email: {email}</h2>
+                    <h2 className=' text-2xl'>Country: {country}</h2>
+                    <h2 className=' text-2xl'>City: {city}</h2>
                 </div>
                 <div className="visitor bg-yellow-400 p-5 mb-2">
                     <h2 className=' text-center text-4xl md:text-9xl font-bold'>Visitor</h2>

@@ -38,7 +38,7 @@ function Navbar() {
                             <div className="flex items-center justify-between py-3 md:block">
                                 <div className=' flex'>
                                     <Link to={'/'}>
-                                        <img className=' rounded-xl w-20 md:w-[4em] h-[4em]' src="image/logot.png" alt="" />
+                                        <img className=' rounded-xl w-20 md:w-[4.4em] h-[4.4em]' src="image/logot.png" alt="" />
                                     </Link>
 
                                     <span className=' ml-2 border-r-2 border-gray-300'></span>
@@ -119,7 +119,7 @@ function Navbar() {
                                             <hr />
                                             <li className><Link to={'/aboutorganizer'} className="bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap ">About Oraganiser</Link></li>
                                             <hr />
-                                            <li className><a className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Vyapar Team</a></li>
+                                            {/* <li className><a className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Vyapar Team</a></li> */}
                                             {/* <hr />
                                             <li className><a className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white  border-red-600 py-2 px-4 block whitespace-no-wrap" href="#">Food & Agro Vyapar Expo</a></li> */}
 
@@ -189,7 +189,7 @@ function Navbar() {
                                                 <hr />
                                                 <li className><Link to={'/profilevisitor'} className=" bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white hover:border-b border-red-600 py-2 px-4 block whitespace-no-wrap uppercase" href="#">FOR STUDENT REGEISTARTION</Link></li>
                                                 <hr />
-                                                <li className><Link to={'/visitorregistration'} className="bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Registration</Link></li>
+                                                {/* <li className><Link to={'/visitorregistration'} className="bg-[#ff0000] md:text-[11px] font-medium  hover:text-yellow-300 text-white  py-2 px-4 block whitespace-no-wrap uppercase" href="#">Visitor Registration</Link></li> */}
                                             </ul>
                                         </div>
                                     </li>
@@ -200,7 +200,7 @@ function Navbar() {
                                         <Link className=' flex' to={'/gallery'} >Gallery</Link>
                                     </li>
                                     <li className="text-white md:text-gray-900 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase   md:rounded-full">
-                                        <Link className=' flex' to={'/contact'} >Conatct Us</Link>
+                                        <Link className=' flex' to={'/contact'} >Contact Us</Link>
                                     </li>
 
                                     {/* <li className="text-gray-600 font-semibold md:text-[11px] hover:text-[#ff0000] uppercase">

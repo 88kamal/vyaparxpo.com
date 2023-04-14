@@ -24,7 +24,16 @@ function Team() {
                 <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84" />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">Mr . AKASH VERMA</h2>
-                  <p className="text-gray-500">Vypar Team Head</p>
+                  <p className="text-gray-500">Director</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84" />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">Mr. Ajay Kr. Yadav</h2>
+                  <p className="text-gray-500">Discipline Secretary</p>
                 </div>
               </div>
             </div>
@@ -36,16 +45,7 @@ function Team() {
                   <p className="text-gray-500">Digital Pramotion Incharge</p>
                 </div>
               </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/WhatsApp Image 2023-04-13 at 1.32.02 PM-modified.png" />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">ADITI SINGH</h2>
-                  <p className="text-gray-500">Management Team</p>
-                </div>
-              </div>
-            </div>
+            </div> 
             <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
               <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/WhatsApp Image 2023-04-13 at 1.32.21 PM-modified.png" />
@@ -55,15 +55,44 @@ function Team() {
                 </div>
               </div>
             </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+             <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
               <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/WhatsApp Image 2023-04-13 at 1.33.49 PM.jpeg" />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">Shail yadav</h2>
-                  {/* <p className="text-gray-500">UX Researcher</p> */}
+                  <p className="text-gray-500">Marketing Incharge</p>
                 </div>
               </div>
             </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/WhatsApp Image 2023-04-13 at 1.32.02 PM-modified.png" />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">ADITI SINGH</h2>
+                  <p className="text-gray-500">Accounts & Management</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88" />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">Mr. Utkarsh Keshari</h2>
+                  <p className="text-gray-500">Exhibitors Management Incharge</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88" />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">Mr. Manjeet Bhardwaj</h2>
+                  <p className="text-gray-500">Marketing Co-Incharge</p>
+                </div>
+              </div>
+            </div>
+           
+           
             {/* <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
               <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90" />

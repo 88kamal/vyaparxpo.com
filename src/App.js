@@ -42,6 +42,7 @@ import AboutVyaparXpo from './pages/About/AboutVyaparXpo';
 import HotelAccomodation from './pages/HotelAccomodation';
 import Gallery from './pages/Gallery';
 import Visitorpass from './pages/Visitor/Visitorpass';
+import { v4 as uuid } from 'uuid';
 
 function App() {
 
@@ -157,6 +158,10 @@ function App() {
   //   return () => data;
   // }, []);
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [country, setCountry] = useState('');
+  const [city, setCity] = useState('');
+  const unique_id = uuid();
 
 
   return (
@@ -174,7 +179,7 @@ function App() {
         <Route exact path="/stallinformation" element={<Stallinformation />} />
         <Route exact path="/profilevisitor" element={<ProfileVisitor />} />
         <Route exact path="/exhibitorregistration" element={<ExhibitorRegistration />} />
-        <Route exact path="/visitorregistration" element={<VisitorRegistration name={name} setName={setName} />} />
+        <Route exact path="/visitorregistration" element={<VisitorRegistration name={name}  unique_id ={ unique_id } setName={setName} email={email} setEmail={setEmail} country={country} setCountry={setCountry} city={city} setCity={setCity}      />} />
         <Route exact path="/studentregistration" element={<BhuStudentRegistration />} />
         <Route exact path="/visitor" element={<Visitor />} />
         <Route exact path="/registrationforsponsorship" element={<Registrationforsponsorship />} />
@@ -191,7 +196,7 @@ function App() {
 
         {/* // stall  */}
         <Route exact path="/allstall" element={<AllStall />} />
-        <Route exact path="/visitorpass" element={<Visitorpass name={name} />} />
+        <Route exact path="/visitorpass" element={<Visitorpass name={name}  unique_id ={ unique_id }  email={email} setEmail={setEmail} country={country} setCountry={setCountry} city={city} setCity={setCity}  />} />
 
         {/* <Route exact path="/sixsq" element={<SixSq />} />
         <Route exact path="/invoice" element={<Invoice />} />
