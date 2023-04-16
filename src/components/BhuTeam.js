@@ -14,7 +14,7 @@ function BhuTeam() {
               <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="bhu/WhatsApp Image 2023-04-13 at 1.29.30 PM.jpeg" />
                 <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">Mr. Sudhir K. Jain</h2>
+                  <h2 className="text-gray-900 title-font font-medium">Prof Sudhir k. Jain</h2>
                   <p className="text-gray-500">Chief Patron</p>
                 </div>
               </div>
@@ -31,9 +31,9 @@ function BhuTeam() {
             </div>
             <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
               <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/1526732101738893312/KYpGG5Yq_400x400.jpg" />
+                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/WhatsApp Image 2023-04-16 at 4.05.50 PM.jpeg" />
                 <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">Mr. Yashwant Kr. Singh</h2>
+                  <h2 className="text-gray-900 title-font font-medium">Prof. Yashwant singh</h2>
                   <p className="text-gray-500">Chairman
                   </p>
                 </div>
