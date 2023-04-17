@@ -5,7 +5,7 @@ function Gallery() {
     return (
         <Layout>
             <section className="text-gray-600 body-font"> 
-            <h1 className=' text-center mt-28 text-2xl mb-5 font-bold underline'>Our Gallery</h1>
+            <h1 className=' text-center md:mt-28 lg:mt-28 mt-40 text-2xl mb-5 font-bold underline'>Our Gallery</h1>
                 <div className="container px-5  mx-auto flex flex-wrap">
                    
                     <div className="flex flex-wrap md:-m-2 -m-1">

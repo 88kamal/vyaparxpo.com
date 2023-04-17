@@ -9,7 +9,7 @@ function AboutOrganizer() {
     }, [])
     return (
         <Layout>
-            <div className=" container mx-auto px-4 mt-28">
+            <div className=" container mx-auto px-4 md:mt-28 lg:mt-28 mt-40">
                
                <h1 className=' text-4xl font-bold fonts2 mb-3'>VYAPAR <span className=' text-orange-500'>.</span> <span className=' text-indigo-500'>.</span> <span className=' text-green-500'>.</span> <span className=' text-pink-500'>INDIA 2023</span></h1>
             

@@ -92,7 +92,7 @@ function ExhibitorRegistration() {
     return (
         <Layout>
             <div className="">
-                <div className="container mx-auto px-4 mt-32 mb-10">
+                <div className="container mx-auto px-4 md:mt-32 lg:mt-32 mt-40 mb-10">
                     <div className="outbgform bg-violet-200 p-5 md:p-10  rounded-lg shadow-lg  ">
                         <div className="left mb-5">
                             <div className="">

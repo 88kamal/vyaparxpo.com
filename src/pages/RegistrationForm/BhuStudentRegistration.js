@@ -4,9 +4,9 @@ import Layout from '../../components/Layout'
 function BhuStudentRegistration() {
   return (
     <Layout>
-      <div className=' container mx-auto px-4 mt-20'>
+      <div className=' container mx-auto px-4 md:mt-28 lg:mt-28 mt-40'>
         <div className="img mb-5">
-          <img src="https://bhu.ac.in/Scripts/SitesBhu/Banner/Banner_2022113172120410.jpg" alt="" />
+          <img src="bhu/Banner_2022113172120410.jpg" alt="" />
         </div>
         <h1 className=' text-center mb-5 text-3xl font-bold fonts-1'>Department of Dairy Science & Food Technology
 </h1>

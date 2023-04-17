@@ -12,7 +12,7 @@ function Stallinformation() {
     return (
         <Layout>
            
-            <div className="main container mx-auto px-4 mt-28">
+            <div className="main container mx-auto px-4 md:mt-28 lg:mt-28 mt-40">
                 <h1 className=' text-3xl font-bold text-center fonts2 mb-2'>VYAPR <span className=' text-[#ff0000]'>EXPO 2023
                     STAND INFORMATION GUIDE </span>
 

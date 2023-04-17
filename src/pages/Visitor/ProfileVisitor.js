@@ -14,7 +14,7 @@ export default function ProfileVisitor() {
       {/* <div className="img">
       <img className='mt-20 mb-6' src="image/reg2.jpg" alt="" />
     </div> */}
-      <div className="main container mx-auto px-4 mt-32">
+      <div className="main container mx-auto px-4 md:mt-32 lg:mt-32 mt-40">
         <div className="flex mb-5 justify-between items-center">
           <h1 className=' text-3xl font-bold  fonts2 mb-8'>VYAPAR <span className='text-[#ff0000]'>
             EXPO 2023</span> VISITOR <br /> <span className='text-[#ff0000]'> PROFILE</span> </h1>

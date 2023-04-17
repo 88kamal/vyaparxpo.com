@@ -14,7 +14,7 @@ export default function WhydoExhibit() {
         <Layout>
             <div>
                 <div className="">
-                    <img className=' mt-20' width={1500} src='image/reg2.jpg' />
+                    <img className=' md:mt-28 lg:mt-28 mt-40' width={1500} src='image/reg2.jpg' />
                 </div>
 
                 <div className=' container mx-auto p-5 py-10'>

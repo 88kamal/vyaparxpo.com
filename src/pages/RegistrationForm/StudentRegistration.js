@@ -60,7 +60,7 @@ function StudentRegistration() {
     return (
         <Layout>
             <section className="text-gray-600 body-font">
-                <div className="container mx-auto  flex flex-col px-5 py-24 justify-center items-center">
+                <div className="container mx-auto  flex flex-col px-5 md:mt-28 lg:mt-28 mt-40 justify-center items-center">
                     <img className="lg:w-2/4 md:w-3/6 w-5/6 mb-5 object-cover object-center rounded" alt="hero" src="pass/Pasted Graphic.png" />
                     <div className="w-full md:w-2/3 flex flex-col mb-16 ">
 
