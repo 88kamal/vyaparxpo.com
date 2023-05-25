@@ -15,7 +15,15 @@ function VisitorRegistration({name,setName, unique_id,  email, setEmail, country
     const [products, setProducts] = useState('');
     const [selectedState, setSelectedState] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState([]);
+
+    
     const [selectedAbout, setSetSelectedAbout] = useState([]);
+    
+    function handleSelectChangeThree(event) {
+        setSetSelectedAbout(event.target.value);
+    }
+    
+    
     const navigate = useNavigate()
 
     function handleSelectChangeOne(event) {
@@ -24,9 +32,7 @@ function VisitorRegistration({name,setName, unique_id,  email, setEmail, country
     function handleSelectChangeTwo(event) {
         setSelectedCategory(event.target.value);
     }
-    function handleSelectChangeThree(event) {
-        setSetSelectedAbout(event.target.value);
-    }
+    
 
     const Register = async () => {
         // validation

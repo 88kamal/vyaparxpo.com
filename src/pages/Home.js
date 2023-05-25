@@ -19,28 +19,32 @@ import Team from '../components/Team'
 import Try from '../components/Try'
 import WhyVaranasi from '../components/WhyVaranasi'
 import ScrollBtn from '../ScrollBtn/ScrollBtn'
-import BhuTeam from '../components/BhuTeam'
+import Bye from '../components/Bye'
+
 
 function Home() {
     return (
-        <Layout>
+//         <Layout>
 
-            <Hero />
-            <Icons/>
-            <RegBox />
-            <About/>
-            <Product/>
-            <Organizer/>
-            <WhyVaranasi/>
-            {/* <Highlights/> */}
-            {/* <Statistics/> */}
-            <Exhibitor/>
-            <BhuTeam/>
-            <Team/>
-            <ScrollBtn/>
-            <Map/>
-{/* <Footer/> */}
-        </Layout>
+//             <Hero />
+//             <Icons/>
+//             <RegBox />
+//             <About/>
+//             <Product/>
+//             <Organizer/>
+//             <WhyVaranasi/>
+//             {/* <Highlights/> */}
+//             {/* <Statistics/> */}
+//             <Exhibitor/>
+//             <BhuTeam/>
+//             <Team/>
+//             <ScrollBtn/>
+//             <Map/>
+// {/* <Footer/> */}
+//         </Layout>
+<>
+<Bye/>
+</>
     )
 }
 
