@@ -2,7 +2,7 @@ import React from 'react'
 
 function Bye() {
   return (
-    <div className=' flex justify-center items-center h-screen text-2xl'>A website that's in Under Construction mode</div>
+    <div className=' flex justify-center items-center h-screen text-2xl'>website that's in Under Construction mode</div>
   )
 }
 
