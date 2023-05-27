@@ -24,27 +24,24 @@ import Bye from '../components/Bye'
 
 function Home() {
     return (
-//         <Layout>
+        <Layout>
 
-//             <Hero />
-//             <Icons/>
-//             <RegBox />
-//             <About/>
-//             <Product/>
-//             <Organizer/>
-//             <WhyVaranasi/>
-//             {/* <Highlights/> */}
-//             {/* <Statistics/> */}
-//             <Exhibitor/>
-//             <BhuTeam/>
-//             <Team/>
-//             <ScrollBtn/>
-//             <Map/>
-// {/* <Footer/> */}
-//         </Layout>
-<>
-<Bye/>
-</>
+            <Hero />
+            <Icons />
+            <RegBox />
+            <About />
+            <Product />
+            <Organizer />
+            <WhyVaranasi />
+            {/* <Highlights/> */}
+            {/* <Statistics/> */}
+            <Exhibitor />
+            <BhuTeam />
+            <Team />
+            <ScrollBtn />
+            <Map />
+            {/* <Footer/> */}
+        </Layout>
     )
 }
 
