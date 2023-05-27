@@ -36,7 +36,7 @@ function Home() {
             {/* <Highlights/> */}
             {/* <Statistics/> */}
             <Exhibitor />
-            <BhuTeam />
+            {/* <BhuTeam /> */}
             <Team />
             <ScrollBtn />
             <Map />
