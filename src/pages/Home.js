@@ -20,31 +20,29 @@ import Try from '../components/Try'
 import WhyVaranasi from '../components/WhyVaranasi'
 import ScrollBtn from '../ScrollBtn/ScrollBtn'
 import Bye from '../components/Bye'
+import BhuTeam from '../components/BhuTeam'
 
 
 function Home() {
     return (
-        // <Layout>
+        <Layout>
 
-        //     <Hero />
-        //     <Icons />
-        //     <RegBox />
-        //     <About />
-        //     <Product />
-        //     <Organizer />
-        //     <WhyVaranasi />
-        //     {/* <Highlights/> */}
-        //     {/* <Statistics/> */}
-        //     <Exhibitor />
-        //     {/* <BhuTeam /> */}
-        //     <Team />
-        //     <ScrollBtn />
-        //     <Map />
-        //     {/* <Footer/> */}
-        // </Layout>
-        <>
-        <Bye/>
-        </>
+            <Hero />
+            <Icons />
+            <RegBox />
+            <About />
+            <Product />
+            <Organizer />
+            <WhyVaranasi />
+            {/* <Highlights/> */}
+            {/* <Statistics/> */}
+            <Exhibitor />
+            <BhuTeam />
+            <Team />
+            <ScrollBtn />
+            <Map />
+            {/* <Footer/> */}
+        </Layout>
     )
 }
 
