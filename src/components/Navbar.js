@@ -45,7 +45,7 @@ function Navbar() {
                                         <span className=' ml-2 border-r-2 border-gray-300'></span>
                                         
                                         <div className=" flex image1 ">
-                                        <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/dsft.png" alt="" />
+                                        
                                         <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/ms.png" alt="" />
                                         <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/g20.jpeg" alt="" />
                                         <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/m.png" alt="" />
