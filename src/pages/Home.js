@@ -35,7 +35,7 @@ function Home() {
             {/* <Highlights/> */}
             {/* <Statistics/> */}
             <Exhibitor />
-            // <BhuTeam />
+         
             <Team />
             <ScrollBtn />
             <Map />
