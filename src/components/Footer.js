@@ -116,10 +116,7 @@ function Footer() {
                                         <a href="">
                                             <img className=' w-32 ' src="footer/logo.png" alt="" />
                                         </a>
-                                        <div className=" border-l-2 border-black"></div>
-                                        <a href="https://bhu.ac.in/Site/Page/1_11_6193_6104_Department-of-Dairy-Science-and-Food-Technology-Facilities-for-Milk-Fruits-and-Vegetables-Processing">
-                                            <img className=' w-32 ' src="footer/dsft.png" alt="" />
-                                        </a>
+                                        
                                     </div>
                                 </li>
                             </nav>
