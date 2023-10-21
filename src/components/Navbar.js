@@ -43,7 +43,7 @@ function Navbar() {
                                     <p className='fonts2 text-xs ml-3 mt-2 font-bold text-black uppercase'>
                                         16-17-18-19-20 OCTOBER, 2023 <br /> AGRICULTURE GROUND (BHU CAMPUS), <br /> VARANASI Uttarpardesh</p>
                                         <span className=' ml-2 border-r-2 border-gray-300'></span>
-                                        // <img className=' image2  w-16 ml-3' src="footer/dsft.png" alt="" />
+                                        
                                         <div className=" flex image1 ">
                                         <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/dsft.png" alt="" />
                                         <img className=' w-5 h-5 md:h-16 md:w-16 lg:w-16 ml-3' src="footer/ms.png" alt="" />
